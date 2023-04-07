@@ -1,0 +1,16 @@
+Nothing to build in platform 'toplevel_lab2'
+
+02:44:21 **** Incremental Build of configuration Debug for project lab2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+02:44:21 **** Incremental Build of configuration Debug for project lab2_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50502 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/toplevel_lab2/export/toplevel_lab2/toplevel_lab2.xpfm standalone_ps7_cortexa9_0 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2_system/Debug/system.bif
+sdcard_gen --xpfm D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/toplevel_lab2/export/toplevel_lab2/toplevel_lab2.xpfm --sys_config toplevel_lab2 --bif D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2_system/Debug/system.bif --bitstream D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2/_ide/bitstream/toplevel_lab2.bit --elf D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2/Debug/lab2.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2/_ide/bitstream/toplevel_lab2.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/lab2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

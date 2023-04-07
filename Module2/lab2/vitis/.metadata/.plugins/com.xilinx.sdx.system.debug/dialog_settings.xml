@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="lab2_system-imgFile" value="D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module2\lab2\vitis\lab2_system\Debug\sd_card\BOOT.BIN"/>
+	<item key="lab2_system-offSet" value=""/>
+	<item key="lab2_system-initFile" value="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module2/lab2/vitis/toplevel_lab2/export/toplevel_lab2/sw/toplevel_lab2/boot/fsbl.elf"/>
+	<item key="lab2_system-flashType" value="qspi-x4-dual_stacked"/>
+	<item key="lab2_system-verifyFlash" value="false"/>
+	<item key="lab2_system-blankCheck" value="false"/>
+	<item key="lab2_system-device" value="Auto Detect"/>
+	<item key="lab2_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="lab2_system"/>
+</section>

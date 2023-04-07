@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab4" location="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/lab4" platform="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/toplevel_lab4/export/toplevel_lab4/toplevel_lab4.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="lab4_system" sysConfig="toplevel_lab4" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="f519c97aeb33d74a669c1eb5b0949c20">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.2094208906">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1571546230" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

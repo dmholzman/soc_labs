@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar  8 18:09:08 2023
+# Process ID: 32236
+# Current directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32192 D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vivado\lab3b.xpr
+# Log file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado/vivado.log
+# Journal file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado\vivado.jou
+# Running On: DESKTOP-GUH0UB4, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado/lab3b.xpr
+update_compile_order -fileset sources_1
+save_project_as lab4 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado -exclude_run_results -force
+close [ open D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab4.vhd w ]
+add_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab4.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd
+file delete -force D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0
+endgroup
+set_property location {5.5 2256 467} [get_bd_cells fir_compiler_0]
+set_property location {6 2265 534} [get_bd_cells fir_compiler_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1
+endgroup
+set_property location {7 2334 680} [get_bd_cells fir_compiler_1]
+set_property name fir1 [get_bd_cells fir_compiler_0]
+set_property name fir2 [get_bd_cells fir_compiler_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_broadcaster:1.1 axis_broadcaster_0
+endgroup
+set_property location {7 2318 823} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2233 1019} [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_intf_ports dds_data]
+connect_bd_intf_net [get_bd_intf_pins dds_compiler_0/M_AXIS_DATA] [get_bd_intf_pins axis_broadcaster_0/S_AXIS]
+delete_bd_objs [get_bd_intf_nets dds_compiler_0_M_AXIS_DATA]
+connect_bd_intf_net [get_bd_intf_pins dds_compiler_0/M_AXIS_DATA] [get_bd_intf_pins axis_broadcaster_0/S_AXIS]
+set_property location {6 2251 393} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2271 388} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2266 395} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2265 396} [get_bd_cells axis_broadcaster_0]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins axis_broadcaster_0/aclk]
+connect_bd_net [get_bd_pins axis_broadcaster_0/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+delete_bd_objs [get_bd_nets xpm_cdc_gen_0_dest_out]
+delete_bd_objs [get_bd_nets xpm_cdc_gen_1_dest_out]
+set_property location {6 2250 835} [get_bd_cells system_ila_0]
+set_property location {1 586 20} [get_bd_cells processing_system7_0]
+set_property location {1 587 55} [get_bd_cells processing_system7_0]
+set_property location {1 586 75} [get_bd_cells processing_system7_0]
+set_property location {1 592 58} [get_bd_cells processing_system7_0]
+set_property location {358 456} [get_bd_ports clk_125]
+set_property location {0.5 164 48} [get_bd_cells processing_system7_0]
+set_property location {2 461 55} [get_bd_cells processing_system7_0]
+set_property location {1 484 32} [get_bd_cells processing_system7_0]
+set_property location {413 454} [get_bd_ports clk_125]
+undo
+set_property location {0.5 139 307} [get_bd_cells rst_ps7_0_50M]
+set_property location {1 152 14} [get_bd_cells processing_system7_0]
+set_property location {1.5 583 234} [get_bd_cells ps7_0_axi_periph]
+set_property location {2.5 959 261} [get_bd_cells axi_resetn]
+set_property location {3 953 532} [get_bd_cells axi_phase]
+set_property location {3 951 439} [get_bd_cells axi_phase]
+set_property location {3 956 505} [get_bd_cells axi_phase]
+set_property location {3 952 555} [get_bd_cells axi_phase]
+set_property location {3 963 206} [get_bd_cells axi_resetn]
+set_property location {3 951 224} [get_bd_cells axi_resetn]
+set_property location {3 954 234} [get_bd_cells axi_resetn]
+set_property location {3.5 1352 211} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {3.5 1227 213} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1256 310} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1234 152} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1222 164} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1228 167} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1225 310} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1216 315} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1277 453} [get_bd_cells xpm_cdc_tdata]
+set_property location {4 1278 610} [get_bd_cells xpm_cdc_tvalid]
+set_property location {4.5 1526 372} [get_bd_cells dds_compiler_0]
+set_property location {5 1524 363} [get_bd_cells dds_compiler_0]
+connect_bd_net [get_bd_pins xpm_cdc_tdata/dest_out] [get_bd_pins dds_compiler_0/s_axis_phase_tdata]
+connect_bd_net [get_bd_pins xpm_cdc_tvalid/dest_out] [get_bd_pins dds_compiler_0/s_axis_phase_tvalid]
+set_property location {5 1533 364} [get_bd_cells dds_compiler_0]
+set_property location {2482 177} [get_bd_ports resetn]
+set_property location {6 1963 72} [get_bd_cells axi_iic_0]
+set_property location {2481 165} [get_bd_ports resetn]
+set_property location {2478 171} [get_bd_ports resetn]
+set_property location {6 1924 364} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1962 372} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1961 376} [get_bd_cells axis_broadcaster_0]
+set_property location {7 2268 575} [get_bd_cells system_ila_0]
+set_property location {7 2316 415} [get_bd_cells fir1]
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter1.coe} CONFIG.Filter_Type {Decimation} CONFIG.Rate_Change_Type {Integer} CONFIG.Decimation_Rate {40} CONFIG.Sample_Frequency {125} CONFIG.Clock_Frequency {125} CONFIG.Coefficient_Width {18} CONFIG.BestPrecision {false} CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Has_ARESETn {true} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {3}] [get_bd_cells fir1]
+connect_bd_net [get_bd_pins fir1/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins fir1/aclk]
+startgroup
+make_bd_pins_external  [get_bd_cells axis_broadcaster_0]
+make_bd_intf_pins_external  [get_bd_cells axis_broadcaster_0]
+endgroup
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter2.coe} CONFIG.Filter_Type {Decimation} CONFIG.Decimation_Rate {64} CONFIG.Sample_Frequency {3.125} CONFIG.Clock_Frequency {125} CONFIG.Coefficient_Width {18} CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Has_ARESETn {true} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Structure {Inferred} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir2]
+connect_bd_net [get_bd_pins fir2/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins fir2/aclk]
+set_property location {7.5 2585 405} [get_bd_cells fir2]
+set_property location {8 2575 419} [get_bd_cells fir2]
+set_property location {8 2578 430} [get_bd_cells fir2]
+connect_bd_intf_net [get_bd_intf_pins fir1/M_AXIS_DATA] [get_bd_intf_pins fir2/S_AXIS_DATA]
+startgroup
+make_bd_pins_external  [get_bd_cells fir2]
+make_bd_intf_pins_external  [get_bd_cells fir2]
+endgroup
+delete_bd_objs [get_bd_intf_nets axis_broadcaster_0_M01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_broadcaster_0/M01_AXIS] [get_bd_intf_pins fir1/S_AXIS_DATA]
+delete_bd_objs [get_bd_intf_ports M01_AXIS_0]
+set_property location {2790 348} [get_bd_intf_ports M00_AXIS_0]
+set_property location {2807 290} [get_bd_intf_ports M00_AXIS_0]
+set_property location {2764 328} [get_bd_intf_ports M00_AXIS_0]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXIS] [get_bd_intf_pins axis_broadcaster_0/M00_AXIS]
+connect_bd_intf_net [get_bd_intf_ports M_AXIS_DATA_0] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+set_property location {8 2559 604} [get_bd_cells system_ila_0]
+set_property location {6 1919 597} [get_bd_cells system_ila_0]
+set_property location {8 2579 609} [get_bd_cells system_ila_0]
+set_property location {8 2587 622} [get_bd_cells system_ila_0]
+set_property location {8 2587 655} [get_bd_cells system_ila_0]
+set_property location {7 2241 648} [get_bd_cells system_ila_0]
+set_property location {7 2253 627} [get_bd_cells system_ila_0]
+set_property location {8 2575 472} [get_bd_cells fir2]
+set_property location {8 2576 466} [get_bd_cells fir2]
+set_property location {8 2577 471} [get_bd_cells fir2]
+set_property location {8 2567 462} [get_bd_cells fir2]
+set_property location {2752 345} [get_bd_intf_ports M00_AXIS_0]
+set_property name DDS_filtered_out [get_bd_intf_ports M_AXIS_DATA_0]
+set_property name DDS_out [get_bd_intf_ports M00_AXIS_0]
+set_property location {6 1904 373} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1883 383} [get_bd_cells axis_broadcaster_0]
+set_property location {7 2251 394} [get_bd_cells fir1]
+set_property location {7 2238 398} [get_bd_cells fir1]
+set_property location {7 2244 406} [get_bd_cells fir1]
+set_property location {8 2579 421} [get_bd_cells fir2]
+set_property location {8 2568 426} [get_bd_cells fir2]
+set_property location {8 2577 405} [get_bd_cells fir2]
+set_property location {8 2561 407} [get_bd_cells fir2]
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -fileset [get_filesets sources_1] -inst_template
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir2]
+endgroup
+validate_bd_design
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_fir_compiler_0_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_fir_compiler_1_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_axis_broadcaster_0_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_axi_iic_0_0_synth_1 proc_system_processing_system7_0_0_synth_1 proc_system_xbar_0_synth_1 proc_system_reset_and_leds_0_synth_1 proc_system_rst_ps7_0_50M_0_synth_1 proc_system_dds_compiler_0_0_synth_1 proc_system_axi_gpio_0_0_synth_1 proc_system_xpm_cdc_gen_1_0_synth_1 proc_system_xpm_cdc_gen_0_1_synth_1 proc_system_xpm_cdc_gen_0_2_synth_1 proc_system_system_ila_0_1_synth_1 proc_system_fir_compiler_0_0_synth_1 proc_system_fir_compiler_1_0_synth_1 proc_system_axis_broadcaster_0_0_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+wait_on_run proc_system_axi_iic_0_0_synth_1
+wait_on_run proc_system_processing_system7_0_0_synth_1
+wait_on_run proc_system_xbar_0_synth_1
+wait_on_run proc_system_reset_and_leds_0_synth_1
+wait_on_run proc_system_rst_ps7_0_50M_0_synth_1
+wait_on_run proc_system_dds_compiler_0_0_synth_1
+wait_on_run proc_system_axi_gpio_0_0_synth_1
+wait_on_run proc_system_xpm_cdc_gen_1_0_synth_1
+wait_on_run proc_system_xpm_cdc_gen_0_1_synth_1
+wait_on_run proc_system_xpm_cdc_gen_0_2_synth_1
+wait_on_run proc_system_system_ila_0_1_synth_1
+wait_on_run proc_system_fir_compiler_0_0_synth_1
+wait_on_run proc_system_fir_compiler_1_0_synth_1
+wait_on_run proc_system_axis_broadcaster_0_0_synth_1
+wait_on_run proc_system_auto_pc_0_synth_1
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {15} CONFIG.DIN_WIDTH {24} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_0]
+set_property location {1 211 -293} [get_bd_cells xlslice_0]
+set_property location {8.5 2879 631} [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA]
+set_property location {9 2836 424} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins fir2/m_axis_data_tdata] [get_bd_pins xlslice_0/Din]
+undo
+undo
+undo
+delete_bd_objs [get_bd_cells xlslice_0]
+set_property location {2968 336} [get_bd_intf_ports DDS_out]
+set_property location {2972 327} [get_bd_intf_ports DDS_out]
+set_property location {7 2178 655} [get_bd_cells system_ila_0]
+save_bd_design
+undo
+undo
+undo
+undo
+set_property location {8.5 2807 563} [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA]
+set_property location {9 2806 433} [get_bd_cells xlslice_0]
+startgroup
+make_bd_pins_external  [get_bd_cells xlslice_0]
+make_bd_intf_pins_external  [get_bd_cells xlslice_0]
+endgroup
+set_property name DDS_filtered_out [get_bd_ports Dout_0]
+delete_bd_objs [get_bd_nets Din_0_1]
+connect_bd_net [get_bd_pins xlslice_0/Din] [get_bd_pins fir2/m_axis_data_tdata]
+startgroup
+make_bd_pins_external  [get_bd_cells fir2]
+make_bd_intf_pins_external  [get_bd_cells fir2]
+endgroup
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA] [get_bd_intf_ports M_AXIS_DATA_0]
+create_bd_port -dir I DDS_filtered_tvalid
+undo
+create_bd_port -dir O DDS_filtered_tvalid
+set_property name DDS_filtered_tdata [get_bd_ports DDS_filtered_out]
+connect_bd_net [get_bd_ports DDS_filtered_tvalid] [get_bd_pins fir2/m_axis_data_tvalid]
+set_property location {2984 486} [get_bd_ports DDS_filtered_tvalid]
+set_property location {9 2838 436} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins system_ila_0/SLOT_1_AXIS_tdata]
+connect_bd_net [get_bd_pins fir2/m_axis_data_tvalid] [get_bd_pins system_ila_0/SLOT_1_AXIS_tvalid]
+validate_bd_design
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+wait_on_run proc_system_system_ila_0_1_synth_1
+wait_on_run proc_system_auto_pc_0_synth_1
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_nets xlslice_0_Dout]
+startgroup
+set_property -dict [list CONFIG.C_SLOT_1_AXIS_TDATA_WIDTH.VALUE_SRC USER] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_DATA_DEPTH {2048} CONFIG.C_SLOT_1_AXIS_TDATA_WIDTH {16}] [get_bd_cells system_ila_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells xlslice_0]
+make_bd_intf_pins_external  [get_bd_cells xlslice_0]
+endgroup
+set_property location {2986 494} [get_bd_ports DDS_filtered_tvalid]
+set_property location {2991 503} [get_bd_ports DDS_filtered_tvalid]
+delete_bd_objs [get_bd_ports DDS_filtered_tdata]
+delete_bd_objs [get_bd_intf_ports DDS_filtered_out]
+set_property name DDS_filtered_tdata [get_bd_ports Dout_0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins system_ila_0/SLOT_1_AXIS_tdata]
+validate_bd_design
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+wait_on_run proc_system_system_ila_0_1_synth_1
+wait_on_run proc_system_auto_pc_0_synth_1
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_ports Din_0]
+validate_bd_design
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+wait_on_run proc_system_system_ila_0_1_synth_1
+wait_on_run proc_system_auto_pc_0_synth_1
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_cdc -name cdc_1
+export_ip_user_files -of_objects  [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp
+file delete -force D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/toplevel_lab4.xsa

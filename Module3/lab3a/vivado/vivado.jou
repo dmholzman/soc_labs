@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Feb 22 18:31:08 2023
+# Process ID: 21124
+# Current directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3a/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32512 D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3a\vivado\vivado.xpr
+# Log file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3a/vivado/vivado.log
+# Journal file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3a/vivado\vivado.jou
+# Running On: DESKTOP-GUH0UB4, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3a/vivado/vivado.xpr
+update_compile_order -fileset sources_1

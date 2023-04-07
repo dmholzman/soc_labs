@@ -1,0 +1,597 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar  8 18:09:08 2023
+# Process ID: 32236
+# Current directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32192 D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vivado\lab3b.xpr
+# Log file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado/vivado.log
+# Journal file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado\vivado.jou
+# Running On: DESKTOP-GUH0UB4, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado/lab3b.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 1738.141 ; gain = 108.164
+update_compile_order -fileset sources_1
+save_project_as lab4 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado -exclude_run_results -force
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-1161] Replacing file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp with file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1/toplevel_lab3.dcp
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_axi_iic_0_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_axi_iic_0_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_processing_system7_0_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_processing_system7_0_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xbar_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xbar_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_reset_and_leds_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_reset_and_leds_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_rst_ps7_0_50M_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_rst_ps7_0_50M_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_dds_compiler_0_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_dds_compiler_0_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_axi_gpio_0_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_axi_gpio_0_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_1_0_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_1_0_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_0_1_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_0_1_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_0_2_synth_1'...
+WARNING: [Coretcl 2-98] Problems encountered while resetting run:
+1. Failed to delete one or more files in run directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_0_2_synth_1
+
+INFO: [Coretcl 2-133] re-setting run 'proc_system_system_ila_0_1_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_axi_iic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_processing_system7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_reset_and_leds_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_rst_ps7_0_50M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_dds_compiler_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_axi_gpio_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_xpm_cdc_gen_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'proc_system_system_ila_0_1_impl_1'...
+save_project_as: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1810.809 ; gain = 0.000
+close [ open D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab4.vhd w ]
+add_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab4.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd] -no_script -reset -force -quiet
+remove_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd
+file delete -force D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/new/toplevel_lab3.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd}
+Reading block design file <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd>...
+Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_resetn
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:dds_compiler:6.0 - dds_compiler_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_phase
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_tvalid
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_dac_resetn
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_dds_resetn
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_tdata
+Successfully read diagram <proc_system> from block design file <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1883.742 ; gain = 54.383
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0
+endgroup
+set_property location {5.5 2256 467} [get_bd_cells fir_compiler_0]
+set_property location {6 2265 534} [get_bd_cells fir_compiler_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1
+endgroup
+set_property location {7 2334 680} [get_bd_cells fir_compiler_1]
+set_property name fir1 [get_bd_cells fir_compiler_0]
+set_property name fir2 [get_bd_cells fir_compiler_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_broadcaster:1.1 axis_broadcaster_0
+endgroup
+set_property location {7 2318 823} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2233 1019} [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_intf_ports dds_data]
+connect_bd_intf_net [get_bd_intf_pins dds_compiler_0/M_AXIS_DATA] [get_bd_intf_pins axis_broadcaster_0/S_AXIS]
+delete_bd_objs [get_bd_intf_nets dds_compiler_0_M_AXIS_DATA]
+connect_bd_intf_net [get_bd_intf_pins dds_compiler_0/M_AXIS_DATA] [get_bd_intf_pins axis_broadcaster_0/S_AXIS]
+set_property location {6 2251 393} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2271 388} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2266 395} [get_bd_cells axis_broadcaster_0]
+set_property location {6 2265 396} [get_bd_cells axis_broadcaster_0]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins axis_broadcaster_0/aclk]
+connect_bd_net [get_bd_pins axis_broadcaster_0/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+delete_bd_objs [get_bd_nets xpm_cdc_gen_0_dest_out]
+delete_bd_objs [get_bd_nets xpm_cdc_gen_1_dest_out]
+set_property location {6 2250 835} [get_bd_cells system_ila_0]
+set_property location {1 586 20} [get_bd_cells processing_system7_0]
+set_property location {1 587 55} [get_bd_cells processing_system7_0]
+set_property location {1 586 75} [get_bd_cells processing_system7_0]
+set_property location {1 592 58} [get_bd_cells processing_system7_0]
+set_property location {358 456} [get_bd_ports clk_125]
+set_property location {0.5 164 48} [get_bd_cells processing_system7_0]
+set_property location {2 461 55} [get_bd_cells processing_system7_0]
+set_property location {1 484 32} [get_bd_cells processing_system7_0]
+set_property location {413 454} [get_bd_ports clk_125]
+undo
+INFO: [Common 17-17] undo 'set_property location {413 454} [get_bd_ports clk_125]'
+set_property location {0.5 139 307} [get_bd_cells rst_ps7_0_50M]
+set_property location {1 152 14} [get_bd_cells processing_system7_0]
+set_property location {1.5 583 234} [get_bd_cells ps7_0_axi_periph]
+set_property location {2.5 959 261} [get_bd_cells axi_resetn]
+set_property location {3 953 532} [get_bd_cells axi_phase]
+set_property location {3 951 439} [get_bd_cells axi_phase]
+set_property location {3 956 505} [get_bd_cells axi_phase]
+set_property location {3 952 555} [get_bd_cells axi_phase]
+set_property location {3 963 206} [get_bd_cells axi_resetn]
+set_property location {3 951 224} [get_bd_cells axi_resetn]
+set_property location {3 954 234} [get_bd_cells axi_resetn]
+set_property location {3.5 1352 211} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {3.5 1227 213} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1256 310} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1234 152} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1222 164} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1228 167} [get_bd_cells xpm_cdc_dac_resetn]
+set_property location {4 1225 310} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1216 315} [get_bd_cells xpm_cdc_dds_resetn]
+set_property location {4 1277 453} [get_bd_cells xpm_cdc_tdata]
+set_property location {4 1278 610} [get_bd_cells xpm_cdc_tvalid]
+set_property location {4.5 1526 372} [get_bd_cells dds_compiler_0]
+set_property location {5 1524 363} [get_bd_cells dds_compiler_0]
+connect_bd_net [get_bd_pins xpm_cdc_tdata/dest_out] [get_bd_pins dds_compiler_0/s_axis_phase_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </dds_compiler_0/s_axis_phase_tdata> is being overridden by the user with net <xpm_cdc_tdata_dest_out>. This pin will not be connected as a part of interface connection <S_AXIS_PHASE>.
+connect_bd_net [get_bd_pins xpm_cdc_tvalid/dest_out] [get_bd_pins dds_compiler_0/s_axis_phase_tvalid]
+WARNING: [BD 41-1306] The connection to interface pin </dds_compiler_0/s_axis_phase_tvalid> is being overridden by the user with net <xpm_cdc_tvalid_dest_out>. This pin will not be connected as a part of interface connection <S_AXIS_PHASE>.
+set_property location {5 1533 364} [get_bd_cells dds_compiler_0]
+set_property location {2482 177} [get_bd_ports resetn]
+set_property location {6 1963 72} [get_bd_cells axi_iic_0]
+set_property location {2481 165} [get_bd_ports resetn]
+set_property location {2478 171} [get_bd_ports resetn]
+set_property location {6 1924 364} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1962 372} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1961 376} [get_bd_cells axis_broadcaster_0]
+set_property location {7 2268 575} [get_bd_cells system_ila_0]
+set_property location {7 2316 415} [get_bd_cells fir1]
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter1.coe} CONFIG.Filter_Type {Decimation} CONFIG.Rate_Change_Type {Integer} CONFIG.Decimation_Rate {40} CONFIG.Sample_Frequency {125} CONFIG.Clock_Frequency {125} CONFIG.Coefficient_Width {18} CONFIG.BestPrecision {false} CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Has_ARESETn {true} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {3}] [get_bd_cells fir1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../Lab4_analysis/filter1.coe'
+connect_bd_net [get_bd_pins fir1/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins fir1/aclk]
+startgroup
+make_bd_pins_external  [get_bd_cells axis_broadcaster_0]
+make_bd_intf_pins_external  [get_bd_cells axis_broadcaster_0]
+endgroup
+set_property -dict [list CONFIG.CoefficientSource {COE_File} CONFIG.Coefficient_File {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter2.coe} CONFIG.Filter_Type {Decimation} CONFIG.Decimation_Rate {64} CONFIG.Sample_Frequency {3.125} CONFIG.Clock_Frequency {125} CONFIG.Coefficient_Width {18} CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {17} CONFIG.Has_ARESETn {true} CONFIG.Coefficient_Sets {1} CONFIG.Interpolation_Rate {1} CONFIG.Zero_Pack_Factor {1} CONFIG.Number_Channels {1} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Structure {Inferred} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_bd_cells fir2]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../Lab4_analysis/filter2.coe'
+connect_bd_net [get_bd_pins fir2/aresetn] [get_bd_pins xpm_cdc_dds_resetn/dest_arst]
+connect_bd_net [get_bd_ports clk_125] [get_bd_pins fir2/aclk]
+set_property location {7.5 2585 405} [get_bd_cells fir2]
+set_property location {8 2575 419} [get_bd_cells fir2]
+set_property location {8 2578 430} [get_bd_cells fir2]
+connect_bd_intf_net [get_bd_intf_pins fir1/M_AXIS_DATA] [get_bd_intf_pins fir2/S_AXIS_DATA]
+startgroup
+make_bd_pins_external  [get_bd_cells fir2]
+make_bd_intf_pins_external  [get_bd_cells fir2]
+endgroup
+delete_bd_objs [get_bd_intf_nets axis_broadcaster_0_M01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_broadcaster_0/M01_AXIS] [get_bd_intf_pins fir1/S_AXIS_DATA]
+delete_bd_objs [get_bd_intf_ports M01_AXIS_0]
+set_property location {2790 348} [get_bd_intf_ports M00_AXIS_0]
+set_property location {2807 290} [get_bd_intf_ports M00_AXIS_0]
+set_property location {2764 328} [get_bd_intf_ports M00_AXIS_0]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXIS] [get_bd_intf_pins axis_broadcaster_0/M00_AXIS]
+connect_bd_intf_net [get_bd_intf_ports M_AXIS_DATA_0] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+set_property location {8 2559 604} [get_bd_cells system_ila_0]
+set_property location {6 1919 597} [get_bd_cells system_ila_0]
+set_property location {8 2579 609} [get_bd_cells system_ila_0]
+set_property location {8 2587 622} [get_bd_cells system_ila_0]
+set_property location {8 2587 655} [get_bd_cells system_ila_0]
+set_property location {7 2241 648} [get_bd_cells system_ila_0]
+set_property location {7 2253 627} [get_bd_cells system_ila_0]
+set_property location {8 2575 472} [get_bd_cells fir2]
+set_property location {8 2576 466} [get_bd_cells fir2]
+set_property location {8 2577 471} [get_bd_cells fir2]
+set_property location {8 2567 462} [get_bd_cells fir2]
+set_property location {2752 345} [get_bd_intf_ports M00_AXIS_0]
+set_property name DDS_filtered_out [get_bd_intf_ports M_AXIS_DATA_0]
+set_property name DDS_out [get_bd_intf_ports M00_AXIS_0]
+set_property location {6 1904 373} [get_bd_cells axis_broadcaster_0]
+set_property location {6 1883 383} [get_bd_cells axis_broadcaster_0]
+set_property location {7 2251 394} [get_bd_cells fir1]
+set_property location {7 2238 398} [get_bd_cells fir1]
+set_property location {7 2244 406} [get_bd_cells fir1]
+set_property location {8 2579 421} [get_bd_cells fir2]
+set_property location {8 2568 426} [get_bd_cells fir2]
+set_property location {8 2577 405} [get_bd_cells fir2]
+set_property location {8 2561 407} [get_bd_cells fir2]
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2319.199 ; gain = 2.586
+save_bd_design
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+make_wrapper -files [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -fileset [get_filesets sources_1] -inst_template
+INFO: [BD 41-1662] The design 'proc_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/sim/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hdl/proc_system_wrapper.vhd
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {22} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Coefficient_Fractional_Bits {15} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {17}] [get_bd_cells fir2]
+endgroup
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2587.957 ; gain = 0.000
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+INFO: [BD 41-1662] The design 'proc_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/sim/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hdl/proc_system_wrapper.vhd
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/proc_system_system_ila_0_1_ooc.xdc'
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/hw_handoff/proc_system_system_ila_0_1.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/synth/proc_system_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_axis_broadcaster_0_0/proc_system_axis_broadcaster_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_broadcaster_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_auto_pc_0/proc_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hw_handoff/proc_system.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2601.531 ; gain = 13.574
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_fir_compiler_0_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_fir_compiler_1_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_axis_broadcaster_0_0] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_axi_iic_0_0_synth_1 proc_system_processing_system7_0_0_synth_1 proc_system_xbar_0_synth_1 proc_system_reset_and_leds_0_synth_1 proc_system_rst_ps7_0_50M_0_synth_1 proc_system_dds_compiler_0_0_synth_1 proc_system_axi_gpio_0_0_synth_1 proc_system_xpm_cdc_gen_1_0_synth_1 proc_system_xpm_cdc_gen_0_1_synth_1 proc_system_xpm_cdc_gen_0_2_synth_1 proc_system_system_ila_0_1_synth_1 proc_system_fir_compiler_0_0_synth_1 proc_system_fir_compiler_1_0_synth_1 proc_system_axis_broadcaster_0_0_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+[Wed Mar  8 20:12:50 2023] Launched proc_system_axi_iic_0_0_synth_1, proc_system_processing_system7_0_0_synth_1, proc_system_xbar_0_synth_1, proc_system_reset_and_leds_0_synth_1, proc_system_rst_ps7_0_50M_0_synth_1, proc_system_dds_compiler_0_0_synth_1, proc_system_axi_gpio_0_0_synth_1, proc_system_xpm_cdc_gen_1_0_synth_1, proc_system_xpm_cdc_gen_0_1_synth_1, proc_system_xpm_cdc_gen_0_2_synth_1, proc_system_system_ila_0_1_synth_1, proc_system_fir_compiler_0_0_synth_1, proc_system_fir_compiler_1_0_synth_1, proc_system_axis_broadcaster_0_0_synth_1, proc_system_auto_pc_0_synth_1...
+Run output will be captured here:
+proc_system_axi_iic_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_axi_iic_0_0_synth_1/runme.log
+proc_system_processing_system7_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_processing_system7_0_0_synth_1/runme.log
+proc_system_xbar_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xbar_0_synth_1/runme.log
+proc_system_reset_and_leds_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_reset_and_leds_0_synth_1/runme.log
+proc_system_rst_ps7_0_50M_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_rst_ps7_0_50M_0_synth_1/runme.log
+proc_system_dds_compiler_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_dds_compiler_0_0_synth_1/runme.log
+proc_system_axi_gpio_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_axi_gpio_0_0_synth_1/runme.log
+proc_system_xpm_cdc_gen_1_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_1_0_synth_1/runme.log
+proc_system_xpm_cdc_gen_0_1_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_0_1_synth_1/runme.log
+proc_system_xpm_cdc_gen_0_2_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_xpm_cdc_gen_0_2_synth_1/runme.log
+proc_system_system_ila_0_1_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_system_ila_0_1_synth_1/runme.log
+proc_system_fir_compiler_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_fir_compiler_0_0_synth_1/runme.log
+proc_system_fir_compiler_1_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_fir_compiler_1_0_synth_1/runme.log
+proc_system_axis_broadcaster_0_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_axis_broadcaster_0_0_synth_1/runme.log
+proc_system_auto_pc_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {15} CONFIG.DIN_WIDTH {24} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_0]
+set_property location {1 211 -293} [get_bd_cells xlslice_0]
+set_property location {8.5 2879 631} [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA]
+set_property location {9 2836 424} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins fir2/m_axis_data_tdata] [get_bd_pins xlslice_0/Din]
+WARNING: [BD 41-1306] The connection to interface pin </fir2/m_axis_data_tdata> is being overridden by the user with net <fir2_m_axis_data_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_DATA>.
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins fir2/m_axis_data_tdata] [get_bd_pins xlslice_0/Din]'
+undo
+INFO: [Common 17-17] undo 'set_property location {9 2836 424} [get_bd_cells xlslice_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA]'
+delete_bd_objs [get_bd_cells xlslice_0]
+set_property location {2968 336} [get_bd_intf_ports DDS_out]
+set_property location {2972 327} [get_bd_intf_ports DDS_out]
+set_property location {7 2178 655} [get_bd_cells system_ila_0]
+save_bd_design
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+undo
+INFO: [Common 17-17] undo 'set_property location {7 2178 655} [get_bd_cells system_ila_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2972 327} [get_bd_intf_ports DDS_out]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2968 336} [get_bd_intf_ports DDS_out]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_cells xlslice_0]'
+set_property location {8.5 2807 563} [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA]
+set_property location {9 2806 433} [get_bd_cells xlslice_0]
+startgroup
+make_bd_pins_external  [get_bd_cells xlslice_0]
+make_bd_intf_pins_external  [get_bd_cells xlslice_0]
+INFO: [BD 5-409] No interface pins to be made external for /xlslice_0
+endgroup
+set_property name DDS_filtered_out [get_bd_ports Dout_0]
+delete_bd_objs [get_bd_nets Din_0_1]
+connect_bd_net [get_bd_pins xlslice_0/Din] [get_bd_pins fir2/m_axis_data_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </fir2/m_axis_data_tdata> is being overridden by the user with net <fir2_m_axis_data_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_DATA>.
+startgroup
+make_bd_pins_external  [get_bd_cells fir2]
+make_bd_intf_pins_external  [get_bd_cells fir2]
+endgroup
+delete_bd_objs [get_bd_intf_nets fir2_M_AXIS_DATA] [get_bd_intf_ports M_AXIS_DATA_0]
+create_bd_port -dir I DDS_filtered_tvalid
+undo
+INFO: [Common 17-17] undo 'create_bd_port -dir I DDS_filtered_tvalid'
+create_bd_port -dir O DDS_filtered_tvalid
+set_property name DDS_filtered_tdata [get_bd_ports DDS_filtered_out]
+connect_bd_net [get_bd_ports DDS_filtered_tvalid] [get_bd_pins fir2/m_axis_data_tvalid]
+WARNING: [BD 41-1306] The connection to interface pin </fir2/m_axis_data_tvalid> is being overridden by the user with net <fir2_m_axis_data_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_DATA>.
+set_property location {2984 486} [get_bd_ports DDS_filtered_tvalid]
+set_property location {9 2838 436} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins system_ila_0/SLOT_1_AXIS_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </system_ila_0/SLOT_1_AXIS_tdata> is being overridden by the user with net </xlslice_0_Dout>. This pin will not be connected as a part of interface connection <SLOT_1_AXIS>.
+connect_bd_net [get_bd_pins fir2/m_axis_data_tvalid] [get_bd_pins system_ila_0/SLOT_1_AXIS_tvalid]
+WARNING: [BD 41-1306] The connection to interface pin </system_ila_0/SLOT_1_AXIS_tvalid> is being overridden by the user with net </fir2_m_axis_data_tvalid>. This pin will not be connected as a part of interface connection <SLOT_1_AXIS>.
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2653.527 ; gain = 2.637
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+INFO: [BD 41-1662] The design 'proc_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/system_ila_0/SLOT_1_AXIS_tdata'(24) to pin '/xlslice_0/Dout'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/system_ila_0/SLOT_1_AXIS_tdata'(24) to pin '/xlslice_0/Dout'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/sim/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hdl/proc_system_wrapper.vhd
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/proc_system_system_ila_0_1_ooc.xdc'
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/hw_handoff/proc_system_system_ila_0_1.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/synth/proc_system_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_auto_pc_0/proc_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hw_handoff/proc_system.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.hwdef
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2716.359 ; gain = 15.621
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+[Wed Mar  8 20:34:42 2023] Launched proc_system_system_ila_0_1_synth_1, proc_system_auto_pc_0_synth_1...
+Run output will be captured here:
+proc_system_system_ila_0_1_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_system_ila_0_1_synth_1/runme.log
+proc_system_auto_pc_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_nets xlslice_0_Dout]
+startgroup
+set_property -dict [list CONFIG.C_SLOT_1_AXIS_TDATA_WIDTH.VALUE_SRC USER] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_DATA_DEPTH {2048} CONFIG.C_SLOT_1_AXIS_TDATA_WIDTH {16}] [get_bd_cells system_ila_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells xlslice_0]
+make_bd_intf_pins_external  [get_bd_cells xlslice_0]
+INFO: [BD 5-409] No interface pins to be made external for /xlslice_0
+endgroup
+set_property location {2986 494} [get_bd_ports DDS_filtered_tvalid]
+set_property location {2991 503} [get_bd_ports DDS_filtered_tvalid]
+delete_bd_objs [get_bd_ports DDS_filtered_tdata]
+delete_bd_objs [get_bd_intf_ports DDS_filtered_out]
+set_property name DDS_filtered_tdata [get_bd_ports Dout_0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins system_ila_0/SLOT_1_AXIS_tdata]
+WARNING: [BD 41-1306] The connection to interface pin </system_ila_0/SLOT_1_AXIS_tdata> is being overridden by the user with net </xlslice_0_Dout>. This pin will not be connected as a part of interface connection <SLOT_1_AXIS>.
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2791.820 ; gain = 0.000
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+INFO: [BD 41-1662] The design 'proc_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/sim/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hdl/proc_system_wrapper.vhd
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/proc_system_system_ila_0_1_ooc.xdc'
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/hw_handoff/proc_system_system_ila_0_1.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/synth/proc_system_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_auto_pc_0/proc_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hw_handoff/proc_system.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.hwdef
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+[Wed Mar  8 20:39:55 2023] Launched proc_system_system_ila_0_1_synth_1, proc_system_auto_pc_0_synth_1...
+Run output will be captured here:
+proc_system_system_ila_0_1_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_system_ila_0_1_synth_1/runme.log
+proc_system_auto_pc_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_ports Din_0]
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.969 ; gain = 0.000
+generate_target all [get_files  D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+INFO: [BD 41-1662] The design 'proc_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /axi_iic_0/IIC has associated board param 'IIC_BOARD_INTERFACE', which is set to board part interface 'hdmi_in_ddc'. This interface is connected to an external interface /axi_iic, whose name 'axi_iic' does not match with the board interface name 'hdmi_in_ddc'.
+This is a visual-only issue - this interface /axi_iic_0/IIC will be connected to board interface 'hdmi_in_ddc'. If desired, please change the name of this port /axi_iic manually.
+Wrote  : <D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module4\Lab4\vivado\lab4.srcs\sources_1\bd\proc_system\proc_system.bd> 
+Wrote  : <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/ui/bd_828415b8.ui> 
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/sim/proc_system.vhd
+VHDL Output written to : d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hdl/proc_system_wrapper.vhd
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/proc_system_system_ila_0_1_ooc.xdc'
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/hw_handoff/proc_system_system_ila_0_1.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/synth/proc_system_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/ip/proc_system_auto_pc_0/proc_system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/hw_handoff/proc_system.hwh
+Generated Hardware Definition File d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.gen/sources_1/bd/proc_system/synth/proc_system.hwdef
+catch { config_ip_cache -export [get_ips -all proc_system_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all proc_system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd]
+launch_runs proc_system_system_ila_0_1_synth_1 proc_system_auto_pc_0_synth_1 -jobs 8
+[Wed Mar  8 20:44:58 2023] Launched proc_system_system_ila_0_1_synth_1, proc_system_auto_pc_0_synth_1...
+Run output will be captured here:
+proc_system_system_ila_0_1_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_system_ila_0_1_synth_1/runme.log
+proc_system_auto_pc_0_synth_1: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/proc_system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/sources_1/bd/proc_system/proc_system.bd] -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/sim_scripts -ip_user_files_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files -ipstatic_source_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/modelsim} {questa=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/questa} {riviera=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/riviera} {activehdl=D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  8 21:17:36 2023] Launched synth_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1/runme.log
+[Wed Mar  8 21:17:36 2023] Launched impl_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  8 21:25:18 2023] Launched synth_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1/runme.log
+[Wed Mar  8 21:25:18 2023] Launched impl_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 3018.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.531 . Memory (MB): peak = 3717.344 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.532 . Memory (MB): peak = 3717.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3717.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 153 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 112 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3895.539 ; gain = 1033.445
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3895.539 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_cdc -name cdc_1
+INFO: [Timing 38-91] UpdateTimingParams: No interconnect No Cell Dly, Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
+export_ip_user_files -of_objects  [get_files D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp
+file delete -force D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1/toplevel_lab3.dcp
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1/toplevel_lab4.dcp to D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  8 21:38:38 2023] Launched synth_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/synth_1/runme.log
+[Wed Mar  8 21:38:38 2023] Launched impl_1...
+Run output will be captured here: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vivado/lab4.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 4002.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.533 . Memory (MB): peak = 4002.746 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.533 . Memory (MB): peak = 4002.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4002.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 153 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 112 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 33 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4002.746 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4007.035 ; gain = 2.484
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+write_hw_platform -fixed -include_bit -force -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/toplevel_lab4.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/toplevel_lab4.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4/vitis/toplevel_lab4.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2022.1/data/embeddedsw) loading 0 seconds
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4219.016 ; gain = 159.582
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  9 23:18:24 2023...

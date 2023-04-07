@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 31 18:48:51 2023
+# Process ID: 21420
+# Current directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8196 D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\lab1a.xpr
+# Log file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vivado.log
+# Journal file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a\vivado.jou
+# Running On: DESKTOP-GUH0UB4, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.srcs/sim_1/new/tb_toplevel.vhd w ]
+add_files -fileset sim_1 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.srcs/sim_1/new/tb_toplevel.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_toplevel.tcl
+run 10 ms
+close_sim
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -fileset constrs_1 -norecurse D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/Zybo-Z7-Master.xdc
+import_files -fileset constrs_1 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/Zybo-Z7-Master.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.runs/impl_1/toplevel.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.runs/impl_1/toplevel.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/lab1a.runs/impl_1/toplevel.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+create_bd_design "proc_system"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup

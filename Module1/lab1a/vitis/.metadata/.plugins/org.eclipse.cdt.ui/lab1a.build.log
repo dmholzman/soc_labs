@@ -1,0 +1,38 @@
+21:05:25 **** Incremental Build of configuration Debug for project lab1a ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/lab1a_print.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab1a_print.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/sw/toplevel/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/lab1a_print.d" -MT"src/lab1a_print.o" -o "src/lab1a_print.o" "../src/lab1a_print.c"
+../src/lab1a_print.c: In function 'main':
+../src/lab1a_print.c:68:62: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   68 |     printf("The current value of the DIP switch port is : 0x%X\r\n", XGpio_ReadReg(XPAR_DIPS_AND_LEDS_BASEADDR,XGPIO_DATA_OFFSET));
+      |                                                             ~^
+      |                                                              |
+      |                                                              unsigned int
+      |                                                             %lX
+../src/lab1a_print.c:78:54: warning: format '%X' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   78 |                 printf("CHANGE : the new value is 0x%X\r\n", XGpio_ReadReg(XPAR_DIPS_AND_LEDS_BASEADDR,XGPIO_DATA_OFFSET));
+      |                                                     ~^
+      |                                                      |
+      |                                                      unsigned int
+      |                                                     %lX
+'Finished building: ../src/lab1a_print.c'
+' '
+'Building target: lab1a.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/sw/toplevel/standalone_ps7_cortexa9_0/bsplib/lib -o "lab1a.elf"  ./src/lab1a_print.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab1a.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab1a.elf  |tee "lab1a.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50195	   2548	  22632	  75375	  1266f	lab1a.elf
+'Finished building: lab1a.elf.size'
+' '
+
+21:05:26 Build Finished (took 674ms)
+

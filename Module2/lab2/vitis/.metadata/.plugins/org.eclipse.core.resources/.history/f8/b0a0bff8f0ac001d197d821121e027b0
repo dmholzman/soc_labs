@@ -1,0 +1,256 @@
+/******************************************************************************
+*
+* Dirk Holzman
+* Lab 2 Audio Player
+* 2/15/2023
+*
+******************************************************************************/
+
+/*
+ * lab2_player.c: top level software for audio player. Generates messages to
+ * initialize codec and handle reset. Interfaces with user over serial port,
+ * baud rate 115200. User can load a serial .dat file and play it continuously
+ * or a single time. Files can be overwritten up to 16kB.
+ */
+
+// Notes from lab description: A word is sized as 4 bytes, max file size is 16 kB
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xiic.h"
+#include "xgpio_l.h"
+#include "xllfifo.h"
+#include "xuartps.h"
+
+#define IIC_BASE_ADDRESS	XPAR_IIC_0_BASEADDR
+#define FIFO_BASE_ADDRESS   XPAR_AXI_FIFO_MM_S_0_BASEADDR
+#define UART_BASE_ADDRESS   XPAR_XUARTPS_0_BASEADDR
+#define CODEC_ADDRESS		0b0011010
+#define SAMPLE_RATE_HZ 48828.125
+
+// Global Variables
+// Byte ordering little endian (LeftLSB, LeftMSB, RightLSB, RightMSB)
+// Little endian is where least significant bytes are stored before the more significant bytes
+uint8_t sineLUT[] = {0x00,0x00,0x00,0x00, // 0
+					 0x9E,0x1B,0x9E,0x1B, // 7070
+					 0x10,0x27,0x10,0x27, // 10000
+					 0x9E,0x1B,0x9E,0x1B, // 7070
+					 0x00,0x00,0x00,0x00, // 0
+					 0x62,0xE4,0x62,0xE4, // -7070
+					 0xF0,0xD8,0xF0,0xD8, // -10000
+					 0x62,0xE4,0x62,0xE4}; // -7070
+
+uint8_t quiet[] = {0x00,0x00,0x00,0x00};
+size_t loaded_data_wc; // want this to be accessible across functions
+
+// Function to write to a register in the SSM2603 given the register number and value to write
+void write_codec_register(u8 regnum, u16 regval)
+{
+	uint16_t buffer;
+	uint8_t bufferSplit[2];
+
+	buffer = ((uint16_t)regnum << 9) | regval; // combine both regnum and regval
+	bufferSplit[0] = (uint8_t)(buffer >> 8);
+	bufferSplit[1] = (uint8_t)(buffer);
+
+	XIic_Send(IIC_BASE_ADDRESS, CODEC_ADDRESS, bufferSplit, (unsigned)2, XIIC_STOP);
+	return;
+}
+
+// Function to set the reset signal
+void set_dacif_resetn(u8 resetval)
+{
+	XGpio_WriteReg(XPAR_RESET_AND_LEDS_BASEADDR, XGPIO_DATA_OFFSET, resetval);
+	return;
+}
+
+// Function to configure the codec per the class notes
+void configure_codec()
+{
+	set_dacif_resetn(1);
+	write_codec_register(15, 0x00);
+	usleep(1000);
+	write_codec_register(6, 0x30);
+	write_codec_register(0, 0x17);
+	write_codec_register(1, 0x17);
+	write_codec_register(2, 0x79);
+	write_codec_register(3, 0x79);
+	write_codec_register(4, 0x10);
+	write_codec_register(5, 0x00);
+	write_codec_register(7, 0x02);
+	write_codec_register(8, 0x00);
+	usleep(75000);
+	write_codec_register(9, 0x01);
+	write_codec_register(6, 0x00);
+	set_dacif_resetn(0);
+}
+
+// Helper function to determine number of repetitions of currently loaded data set
+// to play for the requested time duration (in seconds). When typecast, the value
+// is rounded to the nearest integer repetitions so it may not exactly match in seconds.
+int secsToReps(int timeSecs)
+{
+	int reps = (int) (timeSecs * SAMPLE_RATE_HZ) / (loaded_data_wc);
+	return reps;
+}
+
+// Function to play loaded data based on its length. Will playback with Little Endianness in mind.
+// Words stored in files as (LeftLSB, LeftMSB, RightLSB, RightMSB) and need to be made into words ordered
+// LeftMSB, LeftLSB, RightMSB, RightLSB so that we tx out right then left, LSB to MSB
+void playback(uint8_t *loaded_data)
+{
+	uint32_t word;
+
+	for(int i = 0 ; i < loaded_data_wc ; i++)
+	{
+		word = (loaded_data[i*4] << 16) + (loaded_data[1+i*4] << 24) + (loaded_data[2+i*4]) + (loaded_data[3+i*4] << 8);
+	    // Read from the transmit vacancy register, if nonzero can write to register
+		// alternatively use XLlFifo_iTxVacancy
+	    if (XLlFifo_ReadReg(FIFO_BASE_ADDRESS, XLLF_TDFV_OFFSET))
+	    {
+	    	XLlFifo_WriteReg(FIFO_BASE_ADDRESS, XLLF_TDFD_OFFSET, word);
+	    	// alternatively use XLlFifo_TxPutWord
+	    }
+	    // Write length of word in bytes to transmit length to start transmit of word
+	    // alternatively use XLlFifo_iTxSetLen
+   		XLlFifo_WriteReg(FIFO_BASE_ADDRESS, XLLF_TLF_OFFSET, 4);
+   		// Need to wait for the transmit of the word to complete by comparing with mask for transmit complete
+   		while (!(XLlFifo_ReadReg(FIFO_BASE_ADDRESS, XLLF_ISR_OFFSET) & XLLF_INT_TC_MASK)) {}
+   	}
+	return;
+}
+
+// Function to load a .dat file over UART into the loaded_data memory for playback
+int load_file(uint8_t *loaded_data)
+{
+	unsigned int size_samples = 0;
+	unsigned int size_bytes = 0;
+	unsigned int byte;
+
+	// XUartPs_IsReceiveData returns true if there is receive data, else false
+	// Infinite while loop while no receive data to wait
+	while (!XUartPs_IsReceiveData(UART_BASE_ADDRESS)) {}
+
+	// Once data present, check the first word for the file length in samples (little endian)
+	for (int byte_ix = 0; byte_ix < 4; byte_ix++)
+	{
+	  	byte = XUartPs_RecvByte(UART_BASE_ADDRESS);
+	  	printf("Word Byte: %d", byte);
+	  	size_samples += (byte << (byte_ix * 8)); // since LSBs are first, they will shift less
+	}
+
+	size_bytes = size_samples *4;
+
+	// Perform error checking on file to ensure loading is correct
+	// Check for byte length of file is more than 0 and less than max file size (16000)
+	if ((size_bytes < 0) || (size_bytes > 16000))
+	{
+	  	printf("File length is outside allowable range of 0 to 16000 bytes: %d bytes.\n\r", size_bytes);
+	  	// Flush file
+		while (XUartPs_IsReceiveData(UART_BASE_ADDRESS)) {
+			XUartPs_RecvByte(UART_BASE_ADDRESS);
+		}
+	   	return 1; // exit function if unallowable size
+	}
+	else
+	{
+		// Realloc memory space to the loaded_data dynamic memory so that it can fit the full file
+		loaded_data = realloc(loaded_data, size_bytes);
+
+		// Continue reading file now that memory has been allocated
+		for (int i = 0 ; i < size_bytes ; i++)
+		{
+			loaded_data[i] = XUartPs_RecvByte(UART_BASE_ADDRESS);
+		}
+
+		// Flush any data that might remain after the end of file (based on sample count)
+		while (XUartPs_IsReceiveData(UART_BASE_ADDRESS)) {
+			XUartPs_RecvByte(UART_BASE_ADDRESS);
+		}
+
+		printf("Read file containing %d samples...\n\r", size_samples);
+		// Update loaded_data word count to match the file size
+		loaded_data_wc = size_samples;
+	}
+  	return 0;
+}
+
+int main()
+{
+    init_platform();
+
+    // Setup and init
+    print("Lab 2 Audio Player by Dirk Holzman\n\r");
+    print("Sending 0x3 to the LEDs with LED2 tied to reset...\n\r");
+    XGpio_WriteReg(XPAR_RESET_AND_LEDS_BASEADDR, XGPIO_DATA2_OFFSET, 0x03);
+
+    print("Resetting DAC interface and configuring CODEC...\n\r");
+    configure_codec();
+    print("CODEC configured!\n\r");
+
+    // Load sine LUT and play 6kHz tone
+    uint8_t *loaded_data = (uint8_t*) calloc(1, sizeof(uint8_t)); // initial memory allocation
+    loaded_data = realloc(loaded_data, sizeof(sineLUT)); // reallocate to fit sineLUT
+    memcpy(loaded_data, sineLUT, sizeof(sineLUT)); // copy contents of sineLUT to loaded_data location
+    loaded_data_wc = sizeof(sineLUT) / 4;
+
+    print("Briefly playing a test 6 kHz tone... \n\r");
+    for (int rep = 0; rep < secsToReps(5); rep++)
+    {
+    	playback(loaded_data);
+    }
+
+    // UI
+    uint8_t keystroke; // 256 ASCII characters, so need an 8-bit unsigned int
+    int result;
+
+    print("Thank you for your patience. Welcome to the audio playback system!\n\r");
+    print("Press L to load a file.\n\r");
+    print("Press C to play a loaded file continuously.\n\r");
+    print("Press S to play a loaded file once.\n\r");
+    while(1)
+    {
+    	keystroke = XUartPs_RecvByte(UART_BASE_ADDRESS);
+
+    	// allow both lowercase and uppercase characters
+    	if ((keystroke == 'L') || (keystroke == 'l'))
+    	{
+			print("Got load command, send the file from your terminal client.\n\r");
+			result = load_file(loaded_data);
+			if (result)
+				print("Failed to load audio samples :( Please try again.\n\r");
+			else
+				printf("Successfully loaded %d audio samples!\n\r", loaded_data_wc);
+    	}
+    	else if ((keystroke == 'C') || (keystroke == 'c'))
+    	{
+    		print("Playing back continuously. Press any key to halt playback.\n\r");
+    		while(!XUartPs_IsReceiveData(UART_BASE_ADDRESS))
+    		{
+    			playback(loaded_data);
+    		}
+    		print("Key pressed. Playback stopped.\n\r");
+    		// Flushing out keystrokes...
+    		while(XUartPs_IsReceiveData(UART_BASE_ADDRESS))
+    		{
+    			XUartPs_RecvByte(UART_BASE_ADDRESS);
+    		}
+
+    	}
+    	else if ((keystroke == 'S') || (keystroke == 's'))
+    	{
+    		print("Playing a single time.\n\r");
+    		playback(loaded_data);
+    	}
+    	else
+    		print("Invalid input. Please press L, C, or S.\n\r");
+    }
+
+    free(loaded_data); // free memory at program termination
+    cleanup_platform();
+    return 0;
+}

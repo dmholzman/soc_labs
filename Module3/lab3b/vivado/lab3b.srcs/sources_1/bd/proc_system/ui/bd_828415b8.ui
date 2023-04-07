@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.09746",
+   "Default View_TopLeft":"569,56",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/axi_iic_0|/processing_system7_0|/ps7_0_axi_periph|/rst_ps7_0_50M|/dds_compiler_0|/axi_phase|/system_ila_0|",
+   "PinnedPorts":"DDR|FIXED_IO|axi_iic|dds_data|",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2140 -y 10 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2140 -y 30 -defaultsOSRD
+preplace port axi_iic -pg 1 -lvl 7 -x 2140 -y 90 -defaultsOSRD
+preplace port dds_data -pg 1 -lvl 7 -x 2140 -y 370 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 7 -x 2140 -y 200 -defaultsOSRD
+preplace port port-id_clk_125 -pg 1 -lvl 0 -x -50 -y 450 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 6 -x 1940 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 580 -y 60 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 960 -y 280 -defaultsOSRD
+preplace inst axi_resetn -pg 1 -lvl 4 -x 1280 -y 290 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 580 -y 330 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 6 -x 1940 -y 380 -defaultsOSRD
+preplace inst axi_phase -pg 1 -lvl 4 -x 1280 -y 560 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 6 -x 1940 -y 690 -defaultsOSRD
+preplace inst xpm_cdc_tvalid -pg 1 -lvl 5 -x 1590 -y 630 -defaultsOSRD
+preplace inst xpm_cdc_dac_resetn -pg 1 -lvl 5 -x 1590 -y 190 -defaultsOSRD
+preplace inst xpm_cdc_dds_resetn -pg 1 -lvl 5 -x 1590 -y 310 -defaultsOSRD
+preplace inst xpm_cdc_tdata -pg 1 -lvl 5 -x 1590 -y 470 -defaultsOSRD
+preplace netloc axi_phase_gpio2_io_o 1 4 1 1420 590n
+preplace netloc axi_phase_gpio_io_o 1 4 1 1440 490n
+preplace netloc axi_resetn_gpio2_io_o 1 4 1 N 320
+preplace netloc axi_resetn_gpio_io_o 1 4 1 1420 200n
+preplace netloc clk_1 1 0 6 N 450 N 450 N 450 N 450 1430J 390 1710
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 5 10 170 790 440 1130 440 1450 550 1730
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 20 180 780
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 4 800 460 1120 120 N 120 1760
+preplace netloc xpm_cdc_dac_resetn_dest_arst 1 5 2 1760J 200 NJ
+preplace netloc xpm_cdc_gen_0_dest_arst 1 5 1 1720 310n
+preplace netloc xpm_cdc_gen_0_dest_out 1 5 1 1740 360n
+preplace netloc xpm_cdc_gen_1_dest_out 1 5 1 1750 380n
+preplace netloc axi_iic_0_IIC 1 6 1 NJ 90
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 5 2 1760 280 2120
+preplace netloc processing_system7_0_DDR 1 2 5 NJ 10 NJ 10 NJ 10 N 10 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 5 NJ 30 NJ 30 NJ 30 N 30 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 800 70n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1130 260n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 3 1110 90 N 90 N
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1110 300n
+levelinfo -pg 1 -50 -10 580 960 1280 1590 1940 2140
+pagesize -pg 1 -db -bbox -sgen -150 -270 2260 1600
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

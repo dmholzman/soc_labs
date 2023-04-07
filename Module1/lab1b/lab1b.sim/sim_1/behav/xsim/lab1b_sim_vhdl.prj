@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab1b.srcs/sources_1/imports/Module1/clkdivider.vhd" \
+"../../../../lab1b.srcs/sources_1/new/dac_intfc.vhd" \
+"../../../../lab1b.srcs/sim_1/new/lab1b_sim.vhd" \
+
+# Do not sort compile order
+nosort

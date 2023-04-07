@@ -1,0 +1,191 @@
+/******************************************************************************
+*
+* Dirk Holzman
+* Lab 3 SDR Signal Source
+* 2/15/2023
+*
+******************************************************************************/
+
+/*
+ * lab3b_player.c: top level software for audio player based on SDR signal source.
+ * Generates messages to initialize codec and handle reset. Interfaces with user
+ * over serial port, baud rate 115200. User can change the output frequency as desired.
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "xparameters.h"
+#include "xiic.h"
+#include "xgpio_l.h"
+#include "xuartps.h"
+
+#define IIC_BASE_ADDRESS	XPAR_IIC_0_BASEADDR
+#define UART_BASE_ADDRESS   XPAR_XUARTPS_0_BASEADDR
+#define CODEC_ADDRESS		0b0011010
+
+// Global Variables
+int fs = 125000000; // 125 MHz
+int N = 27; // bits in phase accumulator
+
+// Function to write to a register in the SSM2603 given the register number and value to write
+void write_codec_register(u8 regnum, u16 regval)
+{
+	uint16_t buffer;
+	uint8_t bufferSplit[2];
+
+	buffer = ((uint16_t)regnum << 9) | regval; // combine both regnum and regval
+	bufferSplit[0] = (uint8_t)(buffer >> 8);
+	bufferSplit[1] = (uint8_t)(buffer);
+
+	XIic_Send(IIC_BASE_ADDRESS, CODEC_ADDRESS, bufferSplit, (unsigned)2, XIIC_STOP);
+	return;
+}
+
+// Function to set the reset signal for the DAC
+void set_dacif_resetn(u8 resetval)
+{
+	XGpio_WriteReg(XPAR_AXI_RESETN_BASEADDR, XGPIO_DATA_OFFSET, resetval);
+	return;
+}
+
+// Function to configure the codec per the class notes
+void configure_codec()
+{
+	set_dacif_resetn(0);
+	write_codec_register(15, 0x00);
+	usleep(1000);
+	write_codec_register(6, 0x30);
+	write_codec_register(0, 0x17);
+	write_codec_register(1, 0x17);
+	write_codec_register(2, 0x79);
+	write_codec_register(3, 0x79);
+	write_codec_register(4, 0x10);
+	write_codec_register(5, 0x00);
+	write_codec_register(7, 0x02);
+	write_codec_register(8, 0x00);
+	usleep(75000);
+	write_codec_register(9, 0x01);
+	write_codec_register(6, 0x00);
+	set_dacif_resetn(1);
+}
+
+// Function to print the user menu
+void print_menu()
+{
+    print("Lab 3 SDR Signal Source by Dirk Holzman\n\n\r");
+    print("Press 'f' to tune to a new frequency.\n\r");
+    print("Press 'U/u' to increase frequency by 1000/100 Hz.\n\r");
+    print("Press 'D/d' to decrease frequency by 1000/100 Hz.\n\r");
+    print("Press 'r' to reset the phase.\n\r");
+    print("Press any other key to reprint this menu.\n\n\r");
+    return;
+}
+
+// Function to calculate and write the new phase increment based off of the requested frequency.
+void calcPhase (int32_t freq)
+{
+	double calc; // 64-bit, floating point math
+	calc = (double) ((freq / fs) * 2^N);
+	int32_t pInc = (int32_t) calc;
+	XGpio_WriteReg(XPAR_AXI_PHASE_BASEADDR, XGPIO_DATA_OFFSET, pInc);
+
+	print("Updating frequency:\n\r");
+	printf("Freq      = %d\n\r", freq);
+	printf("Phase_inc = %d\n\n\r", pInc);
+
+	return;
+}
+
+int main()
+{
+    init_platform();
+
+    // Setup and init
+    print("Resetting DAC interface and configuring CODEC...\n\r");
+    configure_codec();
+    print("CODEC configured! Starting Lab 3 Application...\n\n\r");
+
+    // Print UI
+    uint8_t keystroke; // 256 ASCII characters, so need an 8-bit unsigned int
+    print_menu();
+
+    // Initialize DDS p_inc
+    int32_t freq = 2000; // frequency in Hz
+    calcPhase(freq);
+    XGpio_WriteReg(XPAR_AXI_PHASE_BASEADDR, XGPIO_DATA2_OFFSET, 1); // Set DDS valid signal high
+
+    while(1)
+    {
+    	keystroke = XUartPs_RecvByte(UART_BASE_ADDRESS);
+
+    	// allow both lowercase and uppercase characters
+    	if ((keystroke == 'f') || (keystroke == 'F')) // set frequency, take in an input string in Hz
+    	{
+    		char f_str[16] = ""; // user input string
+    		int i = 0; // index to string
+    	    print("Enter a frequency in Hz: ");
+    	    while(1)
+    	    {
+    	    	keystroke = XUartPs_RecvByte(UART_BASE_ADDRESS); // maybe use sendByte after this instead
+    	    	f_str[i] = keystroke;
+    	    	i++;
+    	    	if (keystroke != '\r')
+    	    		printf("%c", keystroke);
+    	    	else
+    	    	{
+    	    		print("\n\n\rReturn received, done reading frequency.\n\n\r");
+    	    		break;
+    	    	}
+    	    }
+    	    freq = atoi(f_str);
+    	    calcPhase(freq);
+    	}
+    	else if (keystroke == 'u') // up 100 Hz
+    	{
+    		freq = freq + 100;
+    		calcPhase(freq);
+    	}
+    	else if (keystroke == 'U') // up 1000 Hz
+    	{
+    		freq = freq + 1000;
+			calcPhase(freq);
+    	}
+    	else if ((keystroke == 'd')) // down 100 Hz
+    	{
+    		freq = freq - 100;
+    		if (freq < 0)
+    		{
+    			 print("Frequency cannot be less than 0. Setting to 0.\n\n\r");
+    			 freq = 0;
+    		}
+    		calcPhase(freq);
+    	}
+    	else if ((keystroke == 'D')) // down 1000 Hz
+    	{
+    		freq = freq - 1000;
+    		if (freq < 0)
+    		{
+    			 print("Frequency cannot be less than 0. Setting to 0.\n\n\r");
+    			 freq = 0;
+    		}
+			calcPhase(freq);
+    	}
+    	else if ((keystroke == 'r') || (keystroke == 'R')) // pulse reset line to DAC to set phase (not freq) to 0
+    	{
+    		print("Pulsing DDS ARESETN low and then high to reset phase.\n\n\r");
+    		XGpio_WriteReg(XPAR_AXI_RESETN_BASEADDR, XGPIO_DATA2_OFFSET, 0);
+    		XGpio_WriteReg(XPAR_AXI_RESETN_BASEADDR, XGPIO_DATA2_OFFSET, 1);
+    	}
+    	else
+    	{
+    		print("Invalid input. Reprinting menu.\n\n\r");
+    		print_menu();
+    	}
+    }
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/proc_system/ip/proc_system_axi_iic_0_0/sim/proc_system_axi_iic_0_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_reset_and_leds_0/sim/proc_system_reset_and_leds_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_rst_ps7_0_50M_0/sim/proc_system_rst_ps7_0_50M_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_dds_compiler_0_0/sim/proc_system_dds_compiler_0_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_axi_gpio_0_0/sim/proc_system_axi_gpio_0_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/sim/bd_395b.vhd" \
+"../../../bd/proc_system/ip/proc_system_system_ila_0_1/bd_0/ip/ip_0/sim/bd_395b_ila_lib_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_system_ila_0_1/sim/proc_system_system_ila_0_1.vhd" \
+"../../../bd/proc_system/sim/proc_system.vhd" \
+"../../../bd/proc_system/ip/proc_system_fir_compiler_0_0/sim/proc_system_fir_compiler_0_0.vhd" \
+"../../../bd/proc_system/ip/proc_system_fir_compiler_1_0/sim/proc_system_fir_compiler_1_0.vhd" \
+
+nosort

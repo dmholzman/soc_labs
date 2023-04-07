@@ -1,0 +1,10 @@
+22:01:48 **** Incremental Build of configuration Debug for project lab3b_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 56986 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/toplevel_lab3/export/toplevel_lab3/toplevel_lab3.xpfm standalone_ps7_cortexa9_0 D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b_system/Debug/system.bif
+sdcard_gen --xpfm D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/toplevel_lab3/export/toplevel_lab3/toplevel_lab3.xpfm --sys_config toplevel_lab3 --bif D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b_system/Debug/system.bif --bitstream D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b/_ide/bitstream/toplevel_lab3.bit --elf D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b/Debug/lab3b.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b/_ide/bitstream/toplevel_lab3.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen  -image D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/lab3b_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+22:01:53 Build Finished (took 4s.937ms)
+

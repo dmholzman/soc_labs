@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="proc_system_axi_iic_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_processing_system7_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_xbar_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_reset_and_leds_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_reset_and_leds_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_rst_ps7_0_50M_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_rst_ps7_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_dds_compiler_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_dds_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_axi_gpio_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_xpm_cdc_gen_1_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xpm_cdc_gen_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_xpm_cdc_gen_0_1_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xpm_cdc_gen_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_xpm_cdc_gen_0_2_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xpm_cdc_gen_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_system_ila_0_1_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_system_ila_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_fir_compiler_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_fir_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_fir_compiler_1_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_fir_compiler_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_lowlevel_dac_intfc_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_lowlevel_dac_intfc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_xpm_cdc_tdata_1_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xpm_cdc_tdata_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="proc_system_xpm_cdc_gen_1_0_synth_1"/>
+	</Run>
+	<Run Id="proc_system_xpm_cdc_tdata_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_xpm_cdc_tdata_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_cmpy_0_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_cmpy_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_axi_phase_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_axi_phase_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_dds_compiler_1_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_dds_compiler_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_auto_pc_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="proc_system_fir1_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_fir1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="proc_system_fir_compiler_0_0_synth_1"/>
+	</Run>
+	<Run Id="proc_system_fir2_0_synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/proc_system_fir2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="proc_system_fir_compiler_1_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="proc_system_axi_iic_0_0_synth_1"/>
+		<Parent Id="proc_system_processing_system7_0_0_synth_1"/>
+		<Parent Id="proc_system_xbar_0_synth_1"/>
+		<Parent Id="proc_system_reset_and_leds_0_synth_1"/>
+		<Parent Id="proc_system_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="proc_system_dds_compiler_0_0_synth_1"/>
+		<Parent Id="proc_system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_1_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_0_1_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_0_2_synth_1"/>
+		<Parent Id="proc_system_system_ila_0_1_synth_1"/>
+		<Parent Id="proc_system_fir_compiler_0_0_synth_1"/>
+		<Parent Id="proc_system_fir_compiler_1_0_synth_1"/>
+		<Parent Id="proc_system_lowlevel_dac_intfc_0_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_tdata_1_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_tdata_0_synth_1"/>
+		<Parent Id="proc_system_cmpy_0_0_synth_1"/>
+		<Parent Id="proc_system_axi_phase_0_synth_1"/>
+		<Parent Id="proc_system_dds_compiler_1_0_synth_1"/>
+		<Parent Id="proc_system_auto_pc_0_synth_1"/>
+		<Parent Id="proc_system_fir1_0_synth_1"/>
+		<Parent Id="proc_system_fir2_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="proc_system_axi_iic_0_0_synth_1"/>
+		<Parent Id="proc_system_processing_system7_0_0_synth_1"/>
+		<Parent Id="proc_system_xbar_0_synth_1"/>
+		<Parent Id="proc_system_reset_and_leds_0_synth_1"/>
+		<Parent Id="proc_system_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="proc_system_dds_compiler_0_0_synth_1"/>
+		<Parent Id="proc_system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_1_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_0_1_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_gen_0_2_synth_1"/>
+		<Parent Id="proc_system_system_ila_0_1_synth_1"/>
+		<Parent Id="proc_system_fir_compiler_0_0_synth_1"/>
+		<Parent Id="proc_system_fir_compiler_1_0_synth_1"/>
+		<Parent Id="proc_system_lowlevel_dac_intfc_0_0_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_tdata_1_synth_1"/>
+		<Parent Id="proc_system_xpm_cdc_tdata_0_synth_1"/>
+		<Parent Id="proc_system_cmpy_0_0_synth_1"/>
+		<Parent Id="proc_system_axi_phase_0_synth_1"/>
+		<Parent Id="proc_system_dds_compiler_1_0_synth_1"/>
+		<Parent Id="proc_system_auto_pc_0_synth_1"/>
+		<Parent Id="proc_system_fir1_0_synth_1"/>
+		<Parent Id="proc_system_fir2_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,19 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Feb 27 22:06:46 2023
+| Host         : DESKTOP-GUH0UB4 running 64-bit major release  (build 9200)
+| Command      : report_cdc -name cdc_lab3b -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vivado/cdc_timing_report_lab3b.txt
+| Design       : toplevel_lab3
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock                                                                                Destination Clock                                                                           CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Warning   clk_fpga_0                                                                                  sys_clk_pin                                                                                 No Common Primary Clock  False Path                      35    35       0        0             0  
+Info      sys_clk_pin                                                                                 dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  No Common Primary Clock  Max Delay Datapath Only          2     2       0        0             0  
+Info      dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  sys_clk_pin                                                                                 No Common Primary Clock  Max Delay Datapath Only          9     9       0        0             0  
+

@@ -1,0 +1,23 @@
+21:45:15 DEBUG : Logs will be stored at 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/IDE.log'.
+21:45:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vitis_exported\temp_xsdb_launch_script.tcl
+21:45:17 INFO  : Registering command handlers for Vitis TCF services
+21:45:18 INFO  : Platform repository initialization has completed.
+21:45:19 INFO  : XSCT server has started successfully.
+21:45:20 INFO  : plnx-install-location is set to ''
+21:45:20 INFO  : Successfully done setting XSCT server connection channel  
+21:45:20 INFO  : Successfully done query RDI_DATADIR 
+21:45:20 INFO  : Successfully done setting workspace for the tool. 
+21:46:01 INFO  : Platform 'toplevel_lab3' is added to custom repositories.
+21:46:03 INFO  : [Import] Updating active build configuration of the system project 'lab3b_system' to 'Debug' after the import.
+21:46:32 INFO  : Result from executing command 'getProjects': toplevel_lab3
+21:46:32 INFO  : Result from executing command 'getPlatforms': toplevel_lab3|D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/toplevel_lab3/export/toplevel_lab3/toplevel_lab3.xpfm;xilinx_vck190_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+21:46:33 INFO  : Checking for BSP changes to sync application flags for project 'lab3b'...
+22:01:11 INFO  : Hardware specification for platform project 'toplevel_lab3' is updated.
+22:01:33 INFO  : Result from executing command 'getProjects': toplevel_lab3
+22:01:33 INFO  : Result from executing command 'getPlatforms': toplevel_lab3|D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module3/lab3b/vitis_exported/toplevel_lab3/export/toplevel_lab3/toplevel_lab3.xpfm;xilinx_vck190_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+22:01:34 INFO  : Checking for BSP changes to sync application flags for project 'lab3b'...
+22:01:41 INFO  : The hardware specification used by project 'lab3b' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:01:41 INFO  : The file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vitis_exported\lab3b\_ide\bitstream\toplevel_lab3.bit' stored in project is removed.
+22:01:42 INFO  : The updated bitstream files are copied from platform to folder 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vitis_exported\lab3b\_ide\bitstream' in project 'lab3b'.
+22:01:42 INFO  : The file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vitis_exported\lab3b\_ide\psinit\ps7_init.tcl' stored in project is removed.
+22:01:48 INFO  : The updated ps init files are copied from platform to folder 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module3\lab3b\vitis_exported\lab3b\_ide\psinit' in project 'lab3b'.

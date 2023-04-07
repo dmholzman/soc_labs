@@ -1,0 +1,2 @@
+ila_dac_test.vhd,vhdl,xil_defaultlib,../../../../lab2.gen/sources_1/ip/ila_dac_test/sim/ila_dac_test.vhd,incdir="../../../../lab2.gen/sources_1/ip/ila_dac_test/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

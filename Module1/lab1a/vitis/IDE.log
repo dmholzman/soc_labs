@@ -1,0 +1,630 @@
+20:12:13 DEBUG : Logs will be stored at 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/IDE.log'.
+20:12:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\temp_xsdb_launch_script.tcl
+20:12:16 INFO  : Registering command handlers for Vitis TCF services
+20:12:17 INFO  : Platform repository initialization has completed.
+20:12:19 INFO  : XSCT server has started successfully.
+20:12:19 INFO  : Successfully done setting XSCT server connection channel  
+20:12:19 INFO  : plnx-install-location is set to ''
+20:12:19 INFO  : Successfully done query RDI_DATADIR 
+20:12:19 INFO  : Successfully done setting workspace for the tool. 
+20:21:30 INFO  : Result from executing command 'getProjects': toplevel
+20:21:30 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+20:21:31 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:21:31 INFO  : Platform 'toplevel' is added to custom repositories.
+20:21:40 INFO  : Platform 'toplevel' is added to custom repositories.
+20:22:17 INFO  : Result from executing command 'getProjects': toplevel
+20:22:17 INFO  : Result from executing command 'getPlatforms': toplevel|D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/toplevel.xpfm;xilinx_vck190_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|C:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+20:22:18 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+20:27:42 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+20:28:42 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+20:28:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:28:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:28:46 INFO  : 'jtag frequency' command is executed.
+20:28:46 INFO  : Context for 'APU' is selected.
+20:28:46 INFO  : System reset is completed.
+20:28:49 INFO  : 'after 3000' command is executed.
+20:28:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:28:51 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:28:51 INFO  : Context for 'APU' is selected.
+20:28:51 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:28:51 INFO  : 'configparams force-mem-access 1' command is executed.
+20:28:51 INFO  : Context for 'APU' is selected.
+20:28:51 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:28:52 INFO  : 'ps7_init' command is executed.
+20:28:52 INFO  : 'ps7_post_config' command is executed.
+20:28:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:28:52 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:28:52 INFO  : 'configparams force-mem-access 0' command is executed.
+20:28:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:28:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:28:52 INFO  : 'con' command is executed.
+20:28:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:28:52 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:34:50 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+20:35:19 INFO  : Disconnected from the channel tcfchan#3.
+20:35:20 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+20:36:18 INFO  : XRT server exited on the port '4352'. A new instance of the server will be launched.
+20:36:19 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+20:36:20 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+20:36:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:36:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:36:22 INFO  : 'jtag frequency' command is executed.
+20:36:22 INFO  : Context for 'APU' is selected.
+20:36:22 INFO  : System reset is completed.
+20:36:25 INFO  : 'after 3000' command is executed.
+20:36:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:36:28 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:36:28 INFO  : Context for 'APU' is selected.
+20:36:28 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:36:28 INFO  : 'configparams force-mem-access 1' command is executed.
+20:36:28 INFO  : Context for 'APU' is selected.
+20:36:28 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:36:28 INFO  : 'ps7_init' command is executed.
+20:36:28 INFO  : 'ps7_post_config' command is executed.
+20:36:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:36:28 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:36:28 INFO  : 'configparams force-mem-access 0' command is executed.
+20:36:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:36:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:36:28 INFO  : 'con' command is executed.
+20:36:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:36:28 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:37:19 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+20:44:57 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+20:45:16 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+20:45:44 INFO  : Disconnected from the channel tcfchan#5.
+20:45:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:45:46 INFO  : 'jtag frequency' command is executed.
+20:45:46 INFO  : Context for 'APU' is selected.
+20:45:46 INFO  : System reset is completed.
+20:45:49 INFO  : 'after 3000' command is executed.
+20:45:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:45:51 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:45:51 INFO  : Context for 'APU' is selected.
+20:45:51 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:45:51 INFO  : 'configparams force-mem-access 1' command is executed.
+20:45:51 INFO  : Context for 'APU' is selected.
+20:45:51 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:45:51 INFO  : 'ps7_init' command is executed.
+20:45:51 INFO  : 'ps7_post_config' command is executed.
+20:45:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:52 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:45:52 INFO  : 'configparams force-mem-access 0' command is executed.
+20:45:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:45:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:52 INFO  : 'con' command is executed.
+20:45:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:45:52 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:46:16 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+20:51:33 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+20:51:44 ERROR : (XRT Server)C:/Xilinx/Vitis/2022.1/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+20:52:22 INFO  : Disconnected from the channel tcfchan#7.
+20:52:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:52:23 INFO  : 'jtag frequency' command is executed.
+20:52:23 INFO  : Context for 'APU' is selected.
+20:52:23 INFO  : System reset is completed.
+20:52:26 INFO  : 'after 3000' command is executed.
+20:52:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:52:29 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:52:29 INFO  : Context for 'APU' is selected.
+20:52:29 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:52:29 INFO  : 'configparams force-mem-access 1' command is executed.
+20:52:29 INFO  : Context for 'APU' is selected.
+20:52:29 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:52:29 INFO  : 'ps7_init' command is executed.
+20:52:29 INFO  : 'ps7_post_config' command is executed.
+20:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:29 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:52:29 INFO  : 'configparams force-mem-access 0' command is executed.
+20:52:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:30 INFO  : 'con' command is executed.
+20:52:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:52:30 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:52:44 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+20:53:37 INFO  : Disconnected from the channel tcfchan#9.
+20:53:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:53:40 INFO  : 'jtag frequency' command is executed.
+20:53:40 INFO  : Context for 'APU' is selected.
+20:53:40 INFO  : System reset is completed.
+20:53:43 INFO  : 'after 3000' command is executed.
+20:53:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:53:45 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:53:45 INFO  : Context for 'APU' is selected.
+20:53:45 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:53:45 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:45 INFO  : Context for 'APU' is selected.
+20:53:45 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:53:46 INFO  : 'ps7_init' command is executed.
+20:53:46 INFO  : 'ps7_post_config' command is executed.
+20:53:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:46 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:46 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:46 INFO  : 'con' command is executed.
+20:53:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:53:46 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:56:06 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+20:56:20 INFO  : Disconnected from the channel tcfchan#10.
+20:56:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:56:20 INFO  : 'jtag frequency' command is executed.
+20:56:20 INFO  : Context for 'APU' is selected.
+20:56:20 INFO  : System reset is completed.
+20:56:23 INFO  : 'after 3000' command is executed.
+20:56:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:56:26 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:56:26 INFO  : Context for 'APU' is selected.
+20:56:26 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:56:26 INFO  : 'configparams force-mem-access 1' command is executed.
+20:56:26 INFO  : Context for 'APU' is selected.
+20:56:26 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:56:26 INFO  : 'ps7_init' command is executed.
+20:56:26 INFO  : 'ps7_post_config' command is executed.
+20:56:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:27 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:56:27 INFO  : 'configparams force-mem-access 0' command is executed.
+20:56:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:56:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:27 INFO  : 'con' command is executed.
+20:56:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:56:27 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+20:56:45 INFO  : Disconnected from the channel tcfchan#12.
+20:56:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+20:56:45 INFO  : 'jtag frequency' command is executed.
+20:56:45 INFO  : Context for 'APU' is selected.
+20:56:45 INFO  : System reset is completed.
+20:56:48 INFO  : 'after 3000' command is executed.
+20:56:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+20:56:51 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+20:56:51 INFO  : Context for 'APU' is selected.
+20:56:51 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+20:56:51 INFO  : 'configparams force-mem-access 1' command is executed.
+20:56:51 INFO  : Context for 'APU' is selected.
+20:56:51 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+20:56:51 INFO  : 'ps7_init' command is executed.
+20:56:51 INFO  : 'ps7_post_config' command is executed.
+20:56:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:51 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:56:51 INFO  : 'configparams force-mem-access 0' command is executed.
+20:56:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:56:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:51 INFO  : 'con' command is executed.
+20:56:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:56:51 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+21:02:59 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+21:03:12 INFO  : Disconnected from the channel tcfchan#13.
+21:03:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+21:03:12 INFO  : 'jtag frequency' command is executed.
+21:03:12 INFO  : Context for 'APU' is selected.
+21:03:12 INFO  : System reset is completed.
+21:03:15 INFO  : 'after 3000' command is executed.
+21:03:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+21:03:17 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+21:03:17 INFO  : Context for 'APU' is selected.
+21:03:17 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+21:03:17 INFO  : 'configparams force-mem-access 1' command is executed.
+21:03:17 INFO  : Context for 'APU' is selected.
+21:03:17 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+21:03:18 INFO  : 'ps7_init' command is executed.
+21:03:18 INFO  : 'ps7_post_config' command is executed.
+21:03:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:18 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:03:18 INFO  : 'configparams force-mem-access 0' command is executed.
+21:03:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:03:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:18 INFO  : 'con' command is executed.
+21:03:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:03:18 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+21:04:52 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+21:05:01 INFO  : Disconnected from the channel tcfchan#15.
+21:05:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+21:05:01 INFO  : 'jtag frequency' command is executed.
+21:05:01 INFO  : Context for 'APU' is selected.
+21:05:01 INFO  : System reset is completed.
+21:05:04 INFO  : 'after 3000' command is executed.
+21:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+21:05:07 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+21:05:07 INFO  : Context for 'APU' is selected.
+21:05:07 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+21:05:07 INFO  : 'configparams force-mem-access 1' command is executed.
+21:05:07 INFO  : Context for 'APU' is selected.
+21:05:07 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+21:05:07 INFO  : 'ps7_init' command is executed.
+21:05:07 INFO  : 'ps7_post_config' command is executed.
+21:05:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:07 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:05:07 INFO  : 'configparams force-mem-access 0' command is executed.
+21:05:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:05:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:07 INFO  : 'con' command is executed.
+21:05:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:05:07 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+21:05:25 INFO  : Checking for BSP changes to sync application flags for project 'lab1a'...
+21:05:52 INFO  : Disconnected from the channel tcfchan#17.
+21:05:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B049F4A' is selected.
+21:05:52 INFO  : 'jtag frequency' command is executed.
+21:05:52 INFO  : Context for 'APU' is selected.
+21:05:52 INFO  : System reset is completed.
+21:05:55 INFO  : 'after 3000' command is executed.
+21:05:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}' command is executed.
+21:05:58 INFO  : Device configured successfully with "D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit"
+21:05:58 INFO  : Context for 'APU' is selected.
+21:05:58 INFO  : Hardware design and registers information is loaded from 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa'.
+21:05:58 INFO  : 'configparams force-mem-access 1' command is executed.
+21:05:58 INFO  : Context for 'APU' is selected.
+21:05:58 INFO  : Sourcing of 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl' is done.
+21:05:58 INFO  : 'ps7_init' command is executed.
+21:05:58 INFO  : 'ps7_post_config' command is executed.
+21:05:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:58 INFO  : The application 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:05:58 INFO  : 'configparams force-mem-access 0' command is executed.
+21:05:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B049F4A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B049F4A-23727093-0"}
+fpga -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/bitstream/toplevel.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/toplevel/export/toplevel/hw/toplevel.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module1/lab1a/vitis/lab1a/Debug/lab1a.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:05:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:58 INFO  : 'con' command is executed.
+21:05:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:05:58 INFO  : Launch script is exported to file 'D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module1\lab1a\vitis\lab1a_system\_ide\scripts\systemdebugger_lab1a_system_standalone.tcl'
+21:16:58 INFO  : Disconnected from the channel tcfchan#19.
