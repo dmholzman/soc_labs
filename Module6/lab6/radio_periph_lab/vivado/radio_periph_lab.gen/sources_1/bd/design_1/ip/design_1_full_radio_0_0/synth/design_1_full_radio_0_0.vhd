@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: jhu.edu:user:full_radio:1.0
--- IP Revision: 3
+-- IP VLNV: dirk_holzman:user:full_radio:2.0
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -56,7 +56,7 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_full_radio_0_0 IS
   PORT (
     m_axis_tvalid : OUT STD_LOGIC;
-    m_axis_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -91,7 +91,7 @@ ARCHITECTURE design_1_full_radio_0_0_arch OF design_1_full_radio_0_0 IS
     );
     PORT (
       m_axis_tvalid : OUT STD_LOGIC;
-      m_axis_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -122,7 +122,7 @@ ARCHITECTURE design_1_full_radio_0_0_arch OF design_1_full_radio_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis TDATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_tvalid: SIGNAL IS "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_clk125, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_tvalid: SIGNAL IS "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_clk125, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 m_axis TVALID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_BUSIF S00_AXI:m_axis, FREQ_TOLERANCE_HZ -1, FREQ_HZ 125000000, PHASE 0.0, CLK_DOMAIN design_1_clk125, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK";

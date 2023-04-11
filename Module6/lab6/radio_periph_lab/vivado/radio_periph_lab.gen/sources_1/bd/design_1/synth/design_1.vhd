@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Wed Mar 29 18:33:38 2023
+--Date        : Mon Apr 10 17:12:09 2023
 --Host        : DESKTOP-GUH0UB4 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1427,38 +1427,11 @@ architecture STRUCTURE of design_1 is
     gpo : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_axi_iic_0_0;
-  component design_1_full_radio_0_0 is
-  port (
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC
-  );
-  end component design_1_full_radio_0_0;
   component design_1_lowlevel_dac_intfc_0_0 is
   port (
     resetn : in STD_LOGIC;
     clk125 : in STD_LOGIC;
-    data_word : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    data_word : in STD_LOGIC_VECTOR ( 31 downto 0 );
     sdata : out STD_LOGIC;
     lrck : out STD_LOGIC;
     bclk : out STD_LOGIC;
@@ -1553,7 +1526,7 @@ architecture STRUCTURE of design_1 is
   component design_1_system_ila_0_0 is
   port (
     clk : in STD_LOGIC;
-    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_1_AXI_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1585,6 +1558,33 @@ architecture STRUCTURE of design_1 is
     src_rst : in STD_LOGIC
   );
   end component design_1_xpm_cdc_gen_0_0;
+  component design_1_full_radio_0_0 is
+  port (
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
+  );
+  end component design_1_full_radio_0_0;
   signal axi_iic_0_IIC_SCL_I : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_O : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_T : STD_LOGIC;
@@ -1592,7 +1592,7 @@ architecture STRUCTURE of design_1 is
   signal axi_iic_0_IIC_SDA_O : STD_LOGIC;
   signal axi_iic_0_IIC_SDA_T : STD_LOGIC;
   signal axi_iic_0_gpo : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal dds_compiler_0_M_AXIS_DATA_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal dds_compiler_0_M_AXIS_DATA_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute CONN_BUS_INFO : string;
   attribute CONN_BUS_INFO of dds_compiler_0_M_AXIS_DATA_TDATA : signal is "dds_compiler_0_M_AXIS_DATA xilinx.com:interface:axis:1.0 None TDATA";
   attribute DONT_TOUCH : boolean;
@@ -1827,7 +1827,7 @@ axi_iic_0: component design_1_axi_iic_0_0
     );
 full_radio_0: component design_1_full_radio_0_0
      port map (
-      m_axis_tdata(15 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(15 downto 0),
+      m_axis_tdata(31 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(31 downto 0),
       m_axis_tvalid => dds_compiler_0_M_AXIS_DATA_TVALID,
       s00_axi_aclk => s00_axi_aclk_0_1,
       s00_axi_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),
@@ -1855,7 +1855,7 @@ lowlevel_dac_intfc_0: component design_1_lowlevel_dac_intfc_0_0
      port map (
       bclk => lowlevel_dac_intfc_0_bclk,
       clk125 => s00_axi_aclk_0_1,
-      data_word(15 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(15 downto 0),
+      data_word(31 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(31 downto 0),
       latched_data => NLW_lowlevel_dac_intfc_0_latched_data_UNCONNECTED,
       lrck => lowlevel_dac_intfc_0_lrck,
       mclk => lowlevel_dac_intfc_0_mclk,
@@ -2031,7 +2031,7 @@ rst_ps7_0_125M: component design_1_rst_ps7_0_125M_0
     );
 system_ila_0: component design_1_system_ila_0_0
      port map (
-      SLOT_0_AXIS_tdata(15 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(15 downto 0),
+      SLOT_0_AXIS_tdata(31 downto 0) => dds_compiler_0_M_AXIS_DATA_TDATA(31 downto 0),
       SLOT_0_AXIS_tlast => '0',
       SLOT_0_AXIS_tvalid => dds_compiler_0_M_AXIS_DATA_TVALID,
       SLOT_1_AXI_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),

@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
 // Date        : Wed Mar 29 18:35:23 2023
 // Host        : DESKTOP-GUH0UB4 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab_main/vivado/radio_periph_lab.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_cc_0 -prefix
+//               design_1_auto_cc_0_ design_1_auto_cc_0_stub.v
 // Design      : design_1_auto_cc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

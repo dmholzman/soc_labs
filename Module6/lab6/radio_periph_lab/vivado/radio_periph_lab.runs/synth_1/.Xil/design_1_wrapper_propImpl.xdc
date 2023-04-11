@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab_main/src/toplevel.xdc rfile:../../../../src/toplevel.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/src/toplevel.xdc rfile:../../../../src/toplevel.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk125 }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]

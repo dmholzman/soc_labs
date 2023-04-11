@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-150,-10",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1600 -y 70 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1600 -y 90 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 6 -x 1600 -y 530 -defaultsOSRD
+preplace port port-id_bclk -pg 1 -lvl 6 -x 1600 -y 190 -defaultsOSRD
+preplace port port-id_clk125 -pg 1 -lvl 0 -x -220 -y 330 -defaultsOSRD
+preplace port port-id_lrck -pg 1 -lvl 6 -x 1600 -y 170 -defaultsOSRD
+preplace port port-id_mclk -pg 1 -lvl 6 -x 1600 -y 210 -defaultsOSRD
+preplace port port-id_sdata -pg 1 -lvl 6 -x 1600 -y 150 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 5 -x 1420 -y 590 -defaultsOSRD
+preplace inst lowlevel_dac_intfc_0 -pg 1 -lvl 5 -x 1420 -y 200 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 360 -y 120 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 760 -y 360 -defaultsOSRD
+preplace inst rst_ps7_0_125M -pg 1 -lvl 1 -x -20 -y 220 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1420 -y 400 -defaultsOSRD
+preplace inst xpm_cdc_gen_0 -pg 1 -lvl 2 -x 360 -y 400 -defaultsOSRD
+preplace inst full_radio_0 -pg 1 -lvl 4 -x 1100 -y 430 -defaultsOSRD
+preplace netloc axi_iic_0_gpo 1 4 2 1290 80 1540
+preplace netloc lowlevel_dac_intfc_0_bclk 1 5 1 1570J 190n
+preplace netloc lowlevel_dac_intfc_0_lrck 1 5 1 1560J 170n
+preplace netloc lowlevel_dac_intfc_0_mclk 1 5 1 1580J 210n
+preplace netloc lowlevel_dac_intfc_0_sdata 1 5 1 1550J 150n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -190 120 150 230 570
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 -200 10 NJ 10 560
+preplace netloc rst_ps7_0_125M_peripheral_aresetn 1 1 2 150 320 580
+preplace netloc rst_ps7_0_125M_peripheral_reset 1 1 1 N 220
+preplace netloc s00_axi_aclk_0_1 1 0 5 NJ 330 160 330 560 500 920 510 1290
+preplace netloc xpm_cdc_gen_0_dest_rst_out 1 2 3 570 510 910 520 1300
+preplace netloc axi_iic_0_IIC 1 5 1 1560J 530n
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 4 1 1260 150n
+preplace netloc processing_system7_0_DDR 1 2 4 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 580 130n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 2 910 340 1280J
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 2 920 350 1270J
+levelinfo -pg 1 -220 -20 360 760 1100 1420 1600
+pagesize -pg 1 -db -bbox -sgen -310 0 1720 1070
+"
+}
+0

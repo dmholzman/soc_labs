@@ -1,1 +1,0 @@
-Vivado, make bitstream, make_bitbin and then load onto board

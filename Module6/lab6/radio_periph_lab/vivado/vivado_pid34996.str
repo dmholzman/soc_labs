@@ -1,0 +1,960 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 34996
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Apr 10 12:51:41 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	dirkh
+User home directory: C:/Users/dirkh
+User working directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/dirkh/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/dirkh/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/dirkh/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/vivado.log
+Vivado journal file: 	D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/vivado.jou
+Engine tmp dir: 	D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/.Xil/Vivado-34996-DESKTOP-GUH0UB4
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_SDK: C:/Xilinx/Vitis/2022.1
+XILINX_VITIS: C:/Xilinx/Vitis/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,412 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 82 MB (+83662kb) [00:00:06]
+// [Engine Memory]: 1,412 MB (+1329424kb) [00:00:06]
+// Opening Vivado Project: D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\vivado\radio_periph_lab.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/radio_periph_lab.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,412 MB. GUI used memory: 64 MB. Current time: 4/10/23, 12:51:43 PM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/radio_periph_lab.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+13872kb) [00:00:27]
+// [Engine Memory]: 1,554 MB (+74457kb) [00:00:27]
+// [GUI Memory]: 124 MB (+20448kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  2266 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,623 MB. GUI used memory: 76 MB. Current time: 4/10/23, 12:52:00 PM EDT
+// [GUI Memory]: 134 MB (+3865kb) [00:00:29]
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1847.484 ; gain = 232.625 
+// Project name: radio_periph_lab; location: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bA
+// [Engine Memory]: 1,657 MB (+26399kb) [00:00:31]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 180 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// [GUI Memory]: 144 MB (+3790kb) [00:03:34]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file <D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/radio_periph_lab.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1204 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'ca' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bA
+// JavaFX intialization before: 1681145711346
+// JavaFX initialization after: 1681145711590
+// WARNING: HTimer (Open addressing views timer) is taking 288ms to process. Increasing delay to 1300 ms.
+// [Engine Memory]: 1,772 MB (+33685kb) [00:03:40]
+// [GUI Memory]: 152 MB (+578kb) [00:03:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 103 MB. Current time: 4/10/23, 12:55:13 PM EDT
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1366, 507, 1864, 898, false, false, false, true, false); // hw - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ar
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// Elapsed time: 19 seconds
+setText(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "full_radio_v2_0_project"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name full_radio_v2_0_project -directory D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'd:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1248 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,827 MB. GUI used memory: 112 MB. Current time: 4/10/23, 12:55:48 PM EDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 24 seconds
+dismissDialog("Edit in IP Packager"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 173 MB (+13620kb) [00:04:21]
+// [Engine Memory]: 1,932 MB (+75379kb) [00:04:22]
+// Elapsed time: 104 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd)]", 1); // D
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Elapsed time: 42 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'rdi::info_commands {create_ip*}'
+// Tcl Command: 'rdi::info_commands {create_ip*}'
+// Tcl Command: 'rdi::info_commands {create_ip*}'
+// Tcl Command: 'rdi::match_options {create_ip} {}'
+// Tcl Command: 'rdi::match_options {create_ip} {module}'
+// Tcl Command: 'rdi::match_options {create_ip} {module_}'
+// Tcl Command: 'rdi::match_options {create_ip} {dir}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\\} {full_radio}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\\} {full_radio}'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio;   set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clo...'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio 
+// Tcl Message: ERROR: [Common 17-69] Command failed: IP directory 'D:DirkGrad_SchoolU.742.8VL_SOCHWModule6lab6adio_periph_labip_repoull_radio' does not exist.  
+// Elapsed time: 108 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Elapsed time: 21 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio", true); // l
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio", true); // l
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio", true); // l
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio", true); // l
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio", true); // l
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio"); // l
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio 
+// Tcl Message: ERROR: [Common 17-69] Command failed: IP directory 'D:DirkGrad_SchoolU.742.8VL_SOCHWModule6lab6adio_periph_labip_repoull_radio' does not exist.  
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\full_radio"); // l
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module6\lab6\radio_periph_lab\ip_repo\\} {full_radio}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/} {5}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/} {H}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/} {M}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/} {l}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/} {r}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/} {}'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio; set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock...'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_tune -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \;    CONFIG.Output_Frequency1 {0} \;    CONFIG.Output_Width {16} \;    CONFIG.Parameter_Entry {Hardware_Parameters} \;    CONFIG.Phase_Increment {Programmable} \;    CONFIG.Phase_Width {27} \;    CONFIG.Phase_offset {None} \;    CONFIG.S_PHASE_Has_TUSER {Not_Required} \;  ] $dds_compiler_tune'
+// Tcl Message: d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/dds_compiler_tune/dds_compiler_tune.xci 
+// Tcl Message: set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Width {16} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Programmable} \    CONFIG.Phase_Width {27} \    CONFIG.Phase_offset {None} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ] $dds_compiler_tune 
+// Tcl Message: can't read "dds_compiler_tune": no such variable 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 75 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+dismissDialog("Re-customize IP"); // N
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 53 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 767, 166); // dT
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping...'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \;    CONFIG.Output_Frequency1 {0} \;    CONFIG.Output_Width {16} \;    CONFIG.Parameter_Entry {Hardware_Parameters} \;    CONFIG.Phase_Increment {Programmable} \;    CONFIG.Phase_Width {27} \;    CONFIG.Phase_offset {None} \;    CONFIG.S_PHASE_Has_TUSER {Not_Required} \;  ] $dds_compiler_tune'
+// Tcl Message: set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Width {16} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Programmable} \    CONFIG.Phase_Width {27} \    CONFIG.Phase_offset {None} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ] $dds_compiler_tune 
+// Tcl Message: can't read "dds_compiler_tune": no such variable 
+// [GUI Memory]: 188 MB (+6652kb) [00:12:01]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping...'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \;    CONFIG.Output_Frequency1 {0} \;    CONFIG.Output_Width {16} \;    CONFIG.Parameter_Entry {Hardware_Parameters} \;    CONFIG.Phase_Increment {Programmable} \;    CONFIG.Phase_Width {27} \;    CONFIG.Phase_offset {None} \;    CONFIG.S_PHASE_Has_TUSER {Not_Required} \;  ]'
+// Tcl Message: set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Width {16} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Programmable} \    CONFIG.Phase_Width {27} \    CONFIG.Phase_offset {None} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ] 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Width {16} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Programmable} \    CONFIG.Phase_Width {27} \    CONFIG.Phase_offset {None} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ]' 
+// Tcl Message: ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. 
+// Elapsed time: 33 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands {get_ips*}'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping...'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \;    CONFIG.Output_Frequency1 {0} \;    CONFIG.Output_Width {16} \;    CONFIG.Parameter_Entry {Hardware_Parameters} \;    CONFIG.Phase_Increment {Programmable} \;    CONFIG.Phase_Width {27} \;    CONFIG.Phase_offset {None} \;    CONFIG.S_PHASE_Has_TUSER {Not_Required} \;  ] [get_ips dds_compiler_tune]'
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Width {16} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Programmable} \    CONFIG.Phase_Width {27} \    CONFIG.Phase_offset {None} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ] [get_ips dds_compiler_tune] 
+// Tcl Message: 0 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+dismissDialog("Re-customize IP"); // N
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 5); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Phase Angle Increment Values", 3); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Additional Summary", 5); // cW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/dds_compiler_tune/dds_compiler_tune.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_tune'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_tune'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_tune'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_tune'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_tune'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_tune'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dds_compiler_tune] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/dds_compiler_tune/dds_compiler_tune.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/dds_compiler_tune/dds_compiler_tune.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs dds_compiler_tune_synth_1 -jobs 8 
+// Tcl Message: [Mon Apr 10 13:04:52 2023] Launched dds_compiler_tune_synth_1... Run output will be captured here: d:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project/full_radio_v2_0_project.runs/dds_compiler_tune_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 201 MB (+4021kb) [00:13:36]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectButton(PAResourceAtoD.CustomizeCoreDialog_MORE_INFO, "more info"); // g
+selectTable(PAResourceEtoH.HACGCDefaultTablePanel_TABLE, "Mode_of_Operation ; Standard", 3, "Standard", 1); // s
+selectTable(PAResourceEtoH.HACGCDefaultTablePanel_TABLE, "PartsPresent ; Phase_Generator_and_SIN_COS_LUT", 0, "Phase_Generator_and_SIN_COS_LUT", 1); // s
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - full_radio", 1); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1198 ms.
+dismissDialog("Opening Editor"); // bA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false); // D
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci] -no_script -reset -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_0/dds_compiler_0.xci 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : dds_compiler_0 (dds_compiler_0.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false, false, false, false, false, true); // D - Double Click
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, false); // D
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,984 MB. GUI used memory: 155 MB. Current time: 4/10/23, 1:05:53 PM EDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+// Elapsed time: 20 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/dds_compiler_tune/dds_compiler_tune.xci]"); // l
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/} {full_radio}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {src}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {src}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {src}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {src}'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_sig -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src; set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Cl...'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_sig -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -module_name dds_compiler_sig -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Amplitude_Mode {Unit_Circle} \;    CONFIG.DATA_Has_TLAST {Not_Required} \;    CONFIG.DDS_Clock_Rate {125} \;    CONFIG.Frequency_Resolution {0.4} \;    CONFIG.Has_ARESETn {true} \;    CONFIG.Has_Phase_Out {false} \;    CONFIG.Latency {8} \;    CONFIG.M_DATA_Has_TUSER {Not_Required} \;    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \;    CONFIG.Output_Frequency1 {0} \;    CONFIG.Output_Selection {Cosine} \;    CONFIG.Output_Width {16} \;    CONFIG.PINC1 {0} \;    CONFIG.Parameter_Entry {Hardware_Parameters} \;    CONFIG.Phase_Increment {Streaming} \;    CONFIG.Phase_Width {27} \;    CONFIG.S_PHASE_Has_TUSER {Not_Required} \;  ] [get_ips dds_compiler_sig]'
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_sig/dds_compiler_sig.xci 
+// Tcl Message: set_property -dict [ list \    CONFIG.Amplitude_Mode {Unit_Circle} \    CONFIG.DATA_Has_TLAST {Not_Required} \    CONFIG.DDS_Clock_Rate {125} \    CONFIG.Frequency_Resolution {0.4} \    CONFIG.Has_ARESETn {true} \    CONFIG.Has_Phase_Out {false} \    CONFIG.Latency {8} \    CONFIG.M_DATA_Has_TUSER {Not_Required} \    CONFIG.Noise_Shaping {Taylor_Series_Corrected} \    CONFIG.Output_Frequency1 {0} \    CONFIG.Output_Selection {Cosine} \    CONFIG.Output_Width {16} \    CONFIG.PINC1 {0} \    CONFIG.Parameter_Entry {Hardware_Parameters} \    CONFIG.Phase_Increment {Streaming} \    CONFIG.Phase_Width {27} \    CONFIG.S_PHASE_Has_TUSER {Not_Required} \  ] [get_ips dds_compiler_sig] 
+// Tcl Message: 0 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd)]", 2, true); // D - Node
+// [GUI Memory]: 213 MB (+1790kb) [00:16:25]
+// Elapsed time: 40 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "update_compile_order -fileset sources_1"); // l
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {create_ip} {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/} {src }'
+// Tcl Command: 'rdi::info_commands {ge*}'
+// Tcl Command: 'rdi::info_commands {gets*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands {get_ips*}'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src ; set_property -dict [ list \;    CONFIG.APortWidth {16} \;    CONFIG.ARESETN {true} \;    CONFIG.BPortWidth {16} \;    CONFIG.MinimumLatency {6} \;    CONFIG.Outpu...'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src '
+// Tcl Message: create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src  
+// Tcl Message: ERROR: [Common 17-165] Too many positional options when parsing 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src', please type 'create_ip -help' for usage info. 
+// Elapsed time: 66 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_radio_v1_0(arch_imp) (full_radio_v1_0.vhd), full_radio_v1_0_S00_AXI_inst : full_radio_v1_0_S00_AXI(arch_imp) (full_radio_v1_0_S00_AXI.vhd), your_instance_name : xil_defaultlib.dds_compiler_0]", 3, false); // D
+// Elapsed time: 23 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "update_compile_order -fileset sources_1"); // l
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// Tcl Message: create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src 
+// Tcl Message: ERROR: [Common 17-165] Too many positional options when parsing 'D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src', please type 'create_ip -help' for usage info. 
+// Elapsed time: 43 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:cmpy:6.0 cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src"); // l
+// Tcl Command: 'rdi::match_options {create_ip} {}'
+// Tcl Command: 'rdi::match_options {create_ip} {modu}'
+// Tcl Command: 'rdi::match_options {create_ip} {module}'
+// Tcl Command: 'rdi::match_options {create_ip} {module_}'
+// Tcl Command: 'rdi::match_options {create_ip} {module_name}'
+// Elapsed time: 72 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "create_ip -vlnv xilinx.com:ip:cmpy:6.0 -module_name cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src", true); // l
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 -module_name cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:cmpy:6.0 -module_name cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:cmpy:6.0 -module_name cmpy_0 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/cmpy_0/cmpy_0.xci 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "update_compile_order -fileset sources_1"); // l
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands {get_up*}'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.APortWidth {16} \;    CONFIG.ARESETN {true} \;    CONFIG.BPortWidth {16} \;    CONFIG.MinimumLatency {6} \;    CONFIG.OutputWidth {19} \;    CONFIG.RoundMode {Truncate} \;  ] [get_ips cmpy_0]'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.APortWidth {16} \;    CONFIG.ARESETN {true} \;    CONFIG.BPortWidth {16} \;    CONFIG.MinimumLatency {6} \;    CONFIG.OutputWidth {19} \;    CONFIG.RoundMode {Truncate} \;  ] [get_ips cmpy_0]'
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [ list \    CONFIG.APortWidth {16} \    CONFIG.ARESETN {true} \    CONFIG.BPortWidth {16} \    CONFIG.MinimumLatency {6} \    CONFIG.OutputWidth {19} \    CONFIG.RoundMode {Truncate} \  ] [get_ips cmpy_0] 
+// Tcl Message: 0 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 417 seconds
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 431, 611); // be
+// Elapsed time: 169 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir1 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir1 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir1 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir1/fir1.xci 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 156 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'rdi::info_commands {gets*}'
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.BestPrecision {false} \;    CONFIG.Clock_Frequency {125} \;    CONFIG.CoefficientSource {COE_File} \;    CONFIG.Coefficient_File {d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter1.coe} \;    CONFIG.Coefficient_Fractional_Bits {15} \;    CONFIG.Coeff...'
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Module4/Lab4_analysis/filter1.coe' 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: 0 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir2 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// Tcl Command: 'create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir2 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src'
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -vlnv xilinx.com:ip:fir_compiler:7.2 -module_name fir2 -dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir2/fir2.xci 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // l
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'set_property -dict [ list \;    CONFIG.Clock_Frequency {125} \;    CONFIG.CoefficientSource {COE_File} \;    CONFIG.Coefficient_File {d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter2.coe} \;    CONFIG.Coefficient_Fractional_Bits {15} \;    CONFIG.Coefficient_Sets {1} \;    CONFIG.Coeffi...'
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module4/Lab4_analysis/filter2.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Module4/Lab4_analysis/filter2.coe' 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: 0 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 9); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// WARNING: HEventQueue.dispatchEvent() is taking  1261 ms.
+dismissDialog("Re-customize IP"); // N
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 5, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 6); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir1 (fir1.xci)]", 7, false); // D
+// Elapsed time: 32 seconds
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 701, 302); // be
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 103, 327); // be
+// Elapsed time: 112 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 329, 302); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("dds_compiler_tune.vhd", 220, 368); // E
+// Elapsed time: 67 seconds
+selectCodeEditor("dds_compiler_tune.vhd", 124, 348); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_radio_v1_0_S00_AXI.vhd", 2); // m
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 319, 318); // be
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 154, 432); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 223, 279); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 158, 380); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 127, 431); // be
+typeControlKey((HResource) null, "full_radio_v1_0_S00_AXI.vhd", 'c'); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 161, 425); // be
+typeControlKey((HResource) null, "full_radio_v1_0_S00_AXI.vhd", 'v'); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 227, 307); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 149, 454); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 71, 247); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 58, 271); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 163, 442); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 215, 483); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 250, 516); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 332, 631); // be
+// WARNING: HEventQueue.dispatchEvent() is taking  1206 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1294 ms.
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 6, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 115, 370); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 125, 503); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 113, 512); // be
+// [GUI Memory]: 224 MB (+856kb) [00:40:35]
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 28, 527); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 34, 519); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 174, 511); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 174, 511); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 100, 503); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 146, 517); // be
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 87, 492, false, false, false, true, false); // be - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ar
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 206, 540); // be
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("full_radio_v1_0_S00_AXI.vhd", 154, 467); // be
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 5, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// WARNING: HEventQueue.dispatchEvent() is taking  1269 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Configuration and Output", 1); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Input and Implementation", 0); // cW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/cmpy_0/cmpy_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cmpy_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cmpy_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cmpy_0'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'cmpy_0'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'cmpy_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cmpy_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all cmpy_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/cmpy_0/cmpy_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/cmpy_0/cmpy_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs cmpy_0_synth_1 -jobs 8 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 10 13:33:22 2023] Launched cmpy_0_synth_1... Run output will be captured here: d:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project/full_radio_v2_0_project.runs/cmpy_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 2096.066 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 30 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_sig (dds_compiler_sig.xci)]", 6, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Implementation", 1); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Detailed Implementation", 2); // cW
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // cW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_sig/dds_compiler_sig.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dds_compiler_sig'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dds_compiler_sig'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dds_compiler_sig'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'dds_compiler_sig'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'dds_compiler_sig'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dds_compiler_sig'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all dds_compiler_sig] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_sig/dds_compiler_sig.xci] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/dds_compiler_sig/dds_compiler_sig.xci] 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs dds_compiler_sig_synth_1 -jobs 8 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 10 13:34:08 2023] Launched dds_compiler_sig_synth_1... Run output will be captured here: d:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project/full_radio_v2_0_project.runs/dds_compiler_sig_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2097.102 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,984 MB. GUI used memory: 167 MB. Current time: 4/10/23, 1:34:22 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir1 (fir1.xci)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir1 (fir1.xci)]", 7, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// WARNING: HEventQueue.dispatchEvent() is taking  1868 ms.
+dismissDialog("Re-customize IP"); // N
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir1/fir1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir1'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir1'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir1'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir1'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir1'... INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir1: Coefficient Reload not selected, no files generated INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir1'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fir1] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir1/fir1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// [GUI Memory]: 238 MB (+2392kb) [00:43:07]
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir1/fir1.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs fir1_synth_1 -jobs 8 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 10 13:34:53 2023] Launched fir1_synth_1... Run output will be captured here: d:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project/full_radio_v2_0_project.runs/fir1_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2128.121 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 174 MB. Current time: 4/10/23, 1:35:08 PM EDT
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,049 MB (+21125kb) [00:43:40]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir2 (fir2.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir2 (fir2.xci)]", 8, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// WARNING: HEventQueue.dispatchEvent() is taking  1636 ms.
+dismissDialog("Re-customize IP"); // N
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir2/fir2.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir2'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir2'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir2'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir2'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir2'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir2'... INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir2: Coefficient Reload not selected, no files generated INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir2'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fir2] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir2/fir2.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// [GUI Memory]: 252 MB (+2909kb) [00:43:52]
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module6/lab6/radio_periph_lab/ip_repo/full_radio/src/fir2/fir2.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs fir2_synth_1 -jobs 8 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Apr 10 13:35:37 2023] Launched fir2_synth_1... Run output will be captured here: d:/dirk/grad_school/525.742.8vl_soc/hw/module6/lab6/radio_periph_lab/vivado/radio_periph_lab.tmp/full_radio_v2_0_project/full_radio_v2_0_project.runs/fir2_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2146.113 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,049 MB. GUI used memory: 181 MB. Current time: 4/10/23, 1:35:52 PM EDT
+// Elapsed time: 33 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci), dds_compiler_tune(dds_compiler_tune_arch) (dds_compiler_tune.vhd)]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_compiler_tune (dds_compiler_tune.xci)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cmpy_0 (cmpy_0.xci)]", 4, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE

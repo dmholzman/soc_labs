@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar 28 21:41:00 2023
+# Process ID: 47412
+# Current directory: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35284 D:\Dirk\Grad_School\525.742.8VL_SOC\HW\Module5\lab5\vivado\lab5.xpr
+# Log file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/vivado.log
+# Journal file: D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado\vivado.jou
+# Running On: DESKTOP-GUH0UB4, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.srcs/sources_1/bd/proc_system/proc_system.bd}
+startgroup
+set_property -dict [list CONFIG.OutputWidth {19}] [get_bd_cells cmpy_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_TO {24} CONFIG.DIN_FROM {39} CONFIG.DIN_WIDTH {48} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_Q]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {48}] [get_bd_cells xlslice_I]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run proc_system_cmpy_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.Number_Paths {2}] [get_bd_cells fir1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Number_Paths {2}] [get_bd_cells fir2]
+endgroup
+delete_bd_objs [get_bd_nets fir4_m_axis_data_tdata]
+connect_bd_net [get_bd_pins xlslice_1/Din] [get_bd_pins fir2/m_axis_data_tdata]
+set_property name xlslice_I_out [get_bd_cells xlslice_0]
+delete_bd_objs [get_bd_nets xlslice_Q_Dout] [get_bd_cells xlslice_Q]
+delete_bd_objs [get_bd_intf_nets fir3_M_AXIS_DATA] [get_bd_cells fir3]
+delete_bd_objs [get_bd_cells fir4]
+delete_bd_objs [get_bd_nets cmpy_0_m_axis_dout_tdata] [get_bd_nets xlslice_I_Dout] [get_bd_cells xlslice_I]
+delete_bd_objs [get_bd_nets cmpy_0_m_axis_dout_tvalid]
+connect_bd_intf_net [get_bd_intf_pins cmpy_0/M_AXIS_DOUT] [get_bd_intf_pins fir1/S_AXIS_DATA]
+undo
+undo
+undo
+copy_bd_objs /  [get_bd_cells {xlslice_I}]
+undo
+undo
+undo
+undo
+delete_bd_objs [get_bd_intf_nets fir3_M_AXIS_DATA] [get_bd_nets xlslice_Q_Dout] [get_bd_cells fir3]
+delete_bd_objs [get_bd_cells fir4]
+set_property name xlslice_I_in [get_bd_cells xlslice_I]
+set_property name xlslice_Q_in [get_bd_cells xlslice_Q]
+copy_bd_objs /  [get_bd_cells {xlconcat_0}]
+set_property location {9 2520 448} [get_bd_cells xlconcat_2]
+connect_bd_net [get_bd_pins xlconcat_2/In1] [get_bd_pins xlslice_Q_in/Dout]
+connect_bd_net [get_bd_pins xlslice_I_in/Dout] [get_bd_pins xlconcat_2/In0]
+delete_bd_objs [get_bd_nets xlslice_I_Dout]
+connect_bd_net [get_bd_pins xlslice_I_in/Dout] [get_bd_pins xlconcat_2/In0]
+connect_bd_net [get_bd_pins xlconcat_2/dout] [get_bd_pins fir1/s_axis_data_tdata]
+set_property name xlslice_Q_out [get_bd_cells xlslice_1]
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {48}] [get_bd_cells xlslice_I_out]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_TO {24} CONFIG.DIN_FROM {39} CONFIG.DIN_WIDTH {48} CONFIG.DOUT_WIDTH {16}] [get_bd_cells xlslice_Q_out]
+endgroup
+set_property name xlconcat_in [get_bd_cells xlconcat_2]
+set_property name xlconcat_out [get_bd_cells xlconcat_0]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run proc_system_fir_compiler_0_0_synth_1
+reset_run proc_system_fir_compiler_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+write_hw_platform -fixed -include_bit -force -file D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vitis/toplevel_lab5.xsa
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.runs/impl_1/toplevel_lab5.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.srcs/sources_1/bd/proc_system/proc_system.bd}
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+open_bd_design {D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/lab5.srcs/sources_1/bd/proc_system/proc_system.bd}
+write_hw_ila_data -force -csv_file foo.csv
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"proc_system_i/system_ila_0/U0/ila_lib"}]]
+archive_project D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/lab5.xpr.zip -temp_dir D:/Dirk/Grad_School/525.742.8VL_SOC/HW/Module5/lab5/vivado/.Xil/Vivado-47412-DESKTOP-GUH0UB4 -force -include_local_ip_cache -include_config_settings
