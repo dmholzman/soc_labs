@@ -1,0 +1,94 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.493281",
+   "Default View_TopLeft":"-189,-511",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 3320 -y -30 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 3320 -y -50 -defaultsOSRD
+preplace port IIC_0 -pg 1 -lvl 6 -x 3320 -y 640 -defaultsOSRD
+preplace port port-id_bclk -pg 1 -lvl 6 -x 3320 -y 280 -defaultsOSRD
+preplace port port-id_clk125 -pg 1 -lvl 0 -x -530 -y 330 -defaultsOSRD
+preplace port port-id_lrck -pg 1 -lvl 6 -x 3320 -y 260 -defaultsOSRD
+preplace port port-id_mclk -pg 1 -lvl 6 -x 3320 -y 300 -defaultsOSRD
+preplace port port-id_sdata -pg 1 -lvl 6 -x 3320 -y 240 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 5 -x 3152 -y 660 -defaultsOSRD
+preplace inst lowlevel_dac_intfc_0 -pg 1 -lvl 5 -x 3152 -y 270 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 290 -y 120 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 780 -y 362 -defaultsOSRD
+preplace inst rst_ps7_0_125M -pg 1 -lvl 1 -x -90 -y 220 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 3152 -y 490 -defaultsOSRD
+preplace inst xpm_cdc_gen_0 -pg 1 -lvl 2 -x 290 -y 460 -defaultsOSRD
+preplace inst radio_fifo_0 -pg 1 -lvl 5 -x 3152 -y 70 -defaultsOSRD
+preplace inst full_radio_0 -pg 1 -lvl 4 -x 2722 -y 380 -defaultsOSRD
+preplace inst ps7_0_axi_periph|xbar -pg 1 -lvl 3 -x 1650 -y 622 -defaultsOSRD
+preplace inst ps7_0_axi_periph|s00_couplers -pg 1 -lvl 2 -x 1130 -y 332 -defaultsOSRD
+preplace inst ps7_0_axi_periph|m00_couplers -pg 1 -lvl 4 -x 2020 -y 422 -defaultsOSRD
+preplace inst ps7_0_axi_periph|m01_couplers -pg 1 -lvl 4 -x 2020 -y 662 -defaultsOSRD
+preplace inst ps7_0_axi_periph|m02_couplers -pg 1 -lvl 4 -x 2020 -y 832 -defaultsOSRD
+preplace inst ps7_0_axi_periph|s00_mmu -pg 1 -lvl 1 -x 810 -y 322 -defaultsOSRD
+preplace inst ps7_0_axi_periph|s00_couplers|auto_pc -pg 1 -lvl 1 -x 1240 -y 342 -defaultsOSRD
+preplace inst ps7_0_axi_periph|m00_couplers|auto_cc -pg 1 -lvl 1 -x 2140 -y 452 -defaultsOSRD
+preplace netloc axi_iic_0_gpo 1 4 2 2960 370 3300
+preplace netloc full_radio_0_m_axis_tdata 1 4 1 2950 70n
+preplace netloc full_radio_0_m_axis_tvalid 1 4 1 2920 50n
+preplace netloc lowlevel_dac_intfc_0_bclk 1 5 1 NJ 280
+preplace netloc lowlevel_dac_intfc_0_lrck 1 5 1 NJ 260
+preplace netloc lowlevel_dac_intfc_0_mclk 1 5 1 NJ 300
+preplace netloc lowlevel_dac_intfc_0_sdata 1 5 1 NJ 240
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -500 120 90 240 510
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 -510 110 80J 230 500
+preplace netloc rst_ps7_0_125M_peripheral_aresetn 1 1 2 80 390 500
+preplace netloc rst_ps7_0_125M_peripheral_reset 1 1 1 N 220
+preplace netloc s00_axi_aclk_0_1 1 0 5 NJ 330 90 330 520 192 2540 290 2930
+preplace netloc xpm_cdc_gen_0_dest_rst_out 1 2 3 490 202 2520 300 2940
+preplace netloc axi_iic_0_IIC 1 5 1 NJ 640
+preplace netloc processing_system7_0_DDR 1 2 4 NJ 70 NJ 70 2900 -30 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 530J 60 NJ 60 2890 -50 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 530 130n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 2 2550 500 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 2 2550 640 N
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 2 2530 280 2910
+preplace netloc ps7_0_axi_periph|M00_ACLK_1 1 0 4 NJ 472 NJ 472 NJ 472 N
+preplace netloc ps7_0_axi_periph|M00_ARESETN_1 1 0 4 NJ 492 NJ 492 NJ 492 N
+preplace netloc ps7_0_axi_periph|M01_ACLK_1 1 0 4 NJ 512 NJ 512 NJ 512 1810
+preplace netloc ps7_0_axi_periph|M01_ARESETN_1 1 0 4 NJ 532 NJ 532 NJ 532 1800
+preplace netloc ps7_0_axi_periph|M02_ACLK_1 1 0 4 NJ 812 NJ 812 NJ 812 N
+preplace netloc ps7_0_axi_periph|M02_ARESETN_1 1 0 4 NJ 832 NJ 832 NJ 832 N
+preplace netloc ps7_0_axi_periph|S00_ACLK_1 1 0 2 690 242 910
+preplace netloc ps7_0_axi_periph|S00_ARESETN_1 1 0 2 710 402 N
+preplace netloc ps7_0_axi_periph|ps7_0_axi_periph_ACLK_net 1 0 4 700J 412 920 442 1490 502 1820
+preplace netloc ps7_0_axi_periph|ps7_0_axi_periph_ARESETN_net 1 0 4 680J 422 930 542 1500 542 1830
+preplace netloc ps7_0_axi_periph|S00_AXI_1 1 0 1 N 302
+preplace netloc ps7_0_axi_periph|m00_couplers_to_ps7_0_axi_periph 1 4 1 N 452
+preplace netloc ps7_0_axi_periph|m01_couplers_to_ps7_0_axi_periph 1 4 1 N 662
+preplace netloc ps7_0_axi_periph|m02_couplers_to_ps7_0_axi_periph 1 4 1 N 832
+preplace netloc ps7_0_axi_periph|s00_couplers_to_xbar 1 2 1 1510 342n
+preplace netloc ps7_0_axi_periph|s00_mmu_M_AXI 1 1 1 N 322
+preplace netloc ps7_0_axi_periph|xbar_to_m00_couplers 1 3 1 1790 412n
+preplace netloc ps7_0_axi_periph|xbar_to_m01_couplers 1 3 1 N 622
+preplace netloc ps7_0_axi_periph|xbar_to_m02_couplers 1 3 1 1790 642n
+preplace netloc ps7_0_axi_periph|s00_couplers|S_ACLK_1 1 0 1 1080 342n
+preplace netloc ps7_0_axi_periph|s00_couplers|S_ARESETN_1 1 0 1 1090 362n
+preplace netloc ps7_0_axi_periph|s00_couplers|auto_pc_to_s00_couplers 1 1 1 N 342
+preplace netloc ps7_0_axi_periph|s00_couplers|s00_couplers_to_auto_pc 1 0 1 N 322
+preplace netloc ps7_0_axi_periph|m00_couplers|M_ACLK_1 1 0 1 N 472
+preplace netloc ps7_0_axi_periph|m00_couplers|M_ARESETN_1 1 0 1 N 492
+preplace netloc ps7_0_axi_periph|m00_couplers|S_ACLK_1 1 0 1 1970 432n
+preplace netloc ps7_0_axi_periph|m00_couplers|S_ARESETN_1 1 0 1 1980 452n
+preplace netloc ps7_0_axi_periph|m00_couplers|auto_cc_to_m00_couplers 1 1 1 N 452
+preplace netloc ps7_0_axi_periph|m00_couplers|m00_couplers_to_auto_cc 1 0 1 N 412
+levelinfo -pg 1 -530 -90 290 780 2722 3152 3320
+levelinfo -hier ps7_0_axi_periph * 810 1130 1650 2020 *
+levelinfo -hier ps7_0_axi_periph|s00_couplers * 1240 *
+levelinfo -hier ps7_0_axi_periph|m00_couplers * 2140 *
+pagesize -pg 1 -db -bbox -sgen -620 -310 3440 1150
+pagesize -hier ps7_0_axi_periph -db -bbox -sgen 650 232 2430 922
+pagesize -hier ps7_0_axi_periph|s00_couplers -db -bbox -sgen 1050 262 1420 422
+pagesize -hier ps7_0_axi_periph|m00_couplers -db -bbox -sgen 1940 352 2330 552
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

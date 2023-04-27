@@ -1,17 +1,5 @@
-Module6/Instructor_Resources/OneDrive_2023-03-29/SD Card Images/sdimg.zip
-Module6/Instructor_Resources/OneDrive_2023-03-29/SD Card Images/vfat_partition/image.ub
-Module6/Instructor_Resources/OneDrive_2023-03-29/SD Card Images/vfat_partition/rootfs.cpio.gz.u-boot
-Module6/Instructor_Resources/OneDrive_2023-03-29/SD Card Images/vfat_partition_with_python/image.ub
-Module6/Instructor_Resources/OneDrive_2023-03-29/SD Card Images/vfat_partition_with_python/rootfs.cpio.gz.u-boot
-Module6/Instructor_Resources/OneDrive_2023-03-29.zip
-./.git/objects/61/b0e6fdc4b3ae8fb8cc651536c6325318b5b71b
-./.git/objects/7b/ee0f66408c644487d90baa56c36405168324ef
-./.git/objects/8b/25629299da31167f44b6933d71f11659ac9020
-./.git/objects/d2/93a53a82d501cabb29f0ad14e9bebf0358d98f
-./.git/objects/ea/05d1eeaa83b63a817c5837880dc38ddde7d062
-./.git/objects/pack/pack-8f58dc12b367813f68ce33c4d12ac7de8d77bc92.pack
-./Module6/Instructor_Resources/SD Card Images/sdimg.zip
-./Module6/Instructor_Resources/SD Card Images/vfat_partition/image.ub
-./Module6/Instructor_Resources/SD Card Images/vfat_partition/rootfs.cpio.gz.u-boot
-./Module6/Instructor_Resources/SD Card Images/vfat_partition_with_python/image.ub
-./Module6/Instructor_Resources/SD Card Images/vfat_partition_with_python/rootfs.cpio.gz.u-boot
+./Module6/Instructor_Resources/SD_Card_Images/sdimg.zip
+./Module6/Instructor_Resources/SD_Card_Images/vfat_partition/image.ub
+./Module6/Instructor_Resources/SD_Card_Images/vfat_partition/rootfs.cpio.gz.u-boot
+./Module6/Instructor_Resources/SD_Card_Images/vfat_partition_with_python/image.ub
+./Module6/Instructor_Resources/SD_Card_Images/vfat_partition_with_python/rootfs.cpio.gz.u-boot
